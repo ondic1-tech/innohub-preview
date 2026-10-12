@@ -34,4 +34,43 @@ if(serviceTabs.length){
 const menu=document.getElementById('main-navigation');
 if(menuButton&&menu){menuButton.addEventListener('click',()=>{const expanded=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!expanded));menu.classList.toggle('open',!expanded)});document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu.classList.contains('open')){menu.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.focus()}})}
 const inquiryForm=document.getElementById('inquiry-form');
-if(inquiryForm){const goal=document.getElementById('goal');const requestedGoal=new URLSearchParams(location.search).get('service');if(requestedGoal&&Array.from(goal.options).some(o=>o.value===requestedGoal)){goal.value=requestedGoal}inquiryForm.addEventListener('submit',event=>{event.preventDefault();if(!inquiryForm.reportValidity())return;const en=document.documentElement.lang==='en';const organisation=document.getElementById('organisation').value.trim();const message=document.getElementById('message').value.trim();const selected=goal.options[goal.selectedIndex].textContent;const subject='INNOHUB — '+selected;const body=(en?'Organisation: ':'Organizace: ')+organisation+'\n'+(en?'Topic: ':'Téma: ')+selected+'\n\n'+message;const email='mailto:simek@tc.cz?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);document.getElementById('form-status').textContent=en?'Your email application will open with a draft. Send the message there. If it does not open, email simek@tc.cz directly.':'V e-mailové aplikaci se otevře rozepsaná zpráva. Odešlete ji v této aplikaci. Pokud se neotevře, napište přímo na simek@tc.cz.';window.location.href=email})}
+if(inquiryForm){
+  const status=document.getElementById('form-status');
+  const button=inquiryForm.querySelector('button[type="submit"]');
+  const en=document.documentElement.lang==='en';
+  const failure=en?'Your message could not be sent. Please try again or email innohub@tc.cz.':'Zprávu se nepodařilo odeslat. Zkuste to znovu nebo napište na innohub@tc.cz.';
+  inquiryForm.addEventListener('submit',async event=>{
+    event.preventDefault();
+    if(button.disabled||!inquiryForm.reportValidity())return;
+    const data=Object.fromEntries(new FormData(inquiryForm));
+    if(data._honey)return;
+    data._url=location.origin+location.pathname;
+    const label=button.textContent;
+    button.disabled=true;
+    button.textContent=en?'Sending…':'Odesílám…';
+    inquiryForm.setAttribute('aria-busy','true');
+    status.textContent='';
+    status.classList.remove('success','error');
+    const controller=new AbortController();
+    const timeout=setTimeout(()=>controller.abort(),20000);
+    try{
+      const response=await fetch('https://formsubmit.co/ajax/innohub@tc.cz',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data),signal:controller.signal});
+      const result=await response.json();
+      if(!response.ok||(result.success!==true&&result.success!=='true'))throw new Error('Submission failed');
+      if(/activat|confirm.*email|check.*email/i.test(result.message||''))throw new Error('Activation needed');
+      inquiryForm.querySelector('.form-fields').hidden=true;
+      status.classList.add('success');
+      status.textContent=en?'Thank you for your message. We will contact you.':'Děkujeme za Vaši zprávu, budeme Vás kontaktovat.';
+      inquiryForm.reset();
+      status.focus();
+    }catch(error){
+      status.classList.add('error');
+      status.textContent=failure;
+    }finally{
+      clearTimeout(timeout);
+      button.disabled=false;
+      button.textContent=label;
+      inquiryForm.removeAttribute('aria-busy');
+    }
+  });
+}
