@@ -1,4 +1,18 @@
 const menuButton=document.querySelector('.menu-toggle');
+const linkedinDisclosure=document.querySelector('.linkedin-disclosure');
+if(linkedinDisclosure){
+  const trigger=linkedinDisclosure.querySelector('summary');
+  let pinned=false;
+  const setLinkedinOpen=open=>{linkedinDisclosure.open=open;trigger.setAttribute('aria-expanded',String(open));};
+  setLinkedinOpen(false);
+  linkedinDisclosure.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse')setLinkedinOpen(true);});
+  linkedinDisclosure.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse'&&!pinned&&!linkedinDisclosure.contains(document.activeElement))setLinkedinOpen(false);});
+  trigger.addEventListener('click',event=>{event.preventDefault();pinned=!pinned;setLinkedinOpen(pinned);});
+  trigger.addEventListener('focus',()=>setLinkedinOpen(true));
+  trigger.addEventListener('blur',()=>{if(!pinned)setLinkedinOpen(false);});
+  document.addEventListener('pointerdown',event=>{if(!linkedinDisclosure.contains(event.target)){pinned=false;setLinkedinOpen(false);}});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&linkedinDisclosure.open){pinned=false;setLinkedinOpen(false);}});
+}
 const serviceTabs=Array.from(document.querySelectorAll('[role="tab"][data-service]'));
 if(serviceTabs.length){
   const selectService=(id,updateUrl=false)=>{
