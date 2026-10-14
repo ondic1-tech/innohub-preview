@@ -40,3 +40,6 @@
 
 /* Platform logos: show the original marks without cropping or recolouring. */
 .platform-icon.platform-icon-brand{flex-basis:112px;width:112px;background:transparent}.platform-icon-brand img{display:block;width:96px;height:48px;max-width:100%;object-fit:contain}
+
+/* Supplied Symbol_Petrol.svg retains its original colour and protection zone. */
+.platform-icon.platform-icon-ilo{flex-basis:112px;width:112px;height:56px;background:transparent}.platform-icon-ilo img{display:block;width:60px;height:56px;max-width:100%;object-fit:contain}
