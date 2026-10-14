@@ -21,7 +21,7 @@
 .platform-card-top{display:flex;align-items:center;gap:14px;margin-bottom:20px}
 .platform-icon{display:flex;align-items:center;justify-content:center;flex:0 0 56px;width:56px;height:56px;border-radius:var(--radius);background:var(--pale);color:var(--blue)}
 .platform-category{margin:0;font-size:.8125rem;font-weight:600;line-height:1.35;letter-spacing:.045em;color:var(--navy)}
-.platform-number{margin-left:auto;color:var(--muted);font-size:.8125rem;font-weight:400}
+
 .platform-card h2{margin:0 0 14px;font-size:1.75rem;line-height:1.16}
 .platform-description{font-size:1rem;color:var(--muted);line-height:1.5;margin:0 0 22px}
 .platform-role{margin-top:auto;padding:18px 20px;background:var(--pale);border-left:2px solid var(--blue);border-radius:var(--radius)}
@@ -31,9 +31,12 @@
 .platform-link>span[aria-hidden]{font-size:1.3rem;color:var(--blue)}
 .platform-next{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:32px;padding:26px 0 0;border-top:1px solid var(--line)}
 .platform-next h2{font-size:1.375rem;margin:0 0 8px}.platform-next p{font-size:1rem;color:var(--muted);margin:0}.platform-next .btn{flex-shrink:0}
-@media(max-width:800px){.platform-card{padding:24px}.platform-card h2{font-size:1.5rem}.platform-card-top{gap:10px}.platform-icon{flex-basis:48px;width:48px;height:48px}.platform-icon svg{width:34px;height:34px}.platform-number{display:none}.platform-role{padding:16px}.platform-next{gap:24px}}
+@media(max-width:800px){.platform-card{padding:24px}.platform-card h2{font-size:1.5rem}.platform-card-top{gap:10px}.platform-icon{flex-basis:48px;width:48px;height:48px}.platform-icon svg{width:34px;height:34px}.platform-role{padding:16px}.platform-next{gap:24px}}
 @media(max-width:600px){.platform-grid{grid-template-columns:minmax(0,1fr);gap:18px}.platform-card{padding:22px}.platform-card h2{font-size:1.625rem}.platforms-heading{padding-bottom:26px}.platforms-heading .lead{font-size:1.125rem}.platform-next{display:block;margin-top:26px;padding-top:22px}.platform-next .btn{margin-top:18px}}
 @media print{.platform-grid{grid-template-columns:1fr 1fr}.platform-card{break-inside:avoid;padding:16px}.platform-next{display:none}.platform-link{font-size:.85rem}}
 
 /* Official ESA logotype, preserved at its original aspect ratio. Source: https://github.com/esa/mo-services-java/blob/master/docs/esa_logo.svg */
 .platform-icon.platform-icon-esa{flex-basis:112px;width:112px;background:transparent}.platform-icon-esa img{display:block;width:89px;height:32px;max-width:100%;object-fit:contain}
+
+/* Platform logos: show the original marks without cropping or recolouring. */
+.platform-icon.platform-icon-brand{flex-basis:112px;width:112px;background:transparent}.platform-icon-brand img{display:block;width:96px;height:48px;max-width:100%;object-fit:contain}
