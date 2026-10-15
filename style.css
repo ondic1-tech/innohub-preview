@@ -43,3 +43,23 @@
 
 /* Supplied Symbol_Petrol.svg retains its original colour and protection zone. */
 .platform-icon.platform-icon-ilo{flex-basis:112px;width:112px;height:56px;background:transparent}.platform-icon-ilo img{display:block;width:60px;height:56px;max-width:100%;object-fit:contain}
+
+/* Startup acceleration and TC Runway */
+.startup-platform-section{margin-top:40px;padding-top:32px;border-top:1px solid var(--line)}
+.startup-platform-intro.lead{max-width:none;margin:0 0 28px}
+.runway-overview{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;align-items:start}
+.runway-brand{min-width:0}.runway-logo{display:block;width:176px;height:64px;max-width:100%;object-fit:contain;object-position:left center;margin-bottom:16px}
+.runway-copy .platform-description{margin-bottom:0}
+.runway-contact-panel{margin-top:26px;padding:20px 22px;background:var(--pale);border-left:2px solid var(--blue);border-radius:var(--radius)}
+.runway-contact-panel>h3{margin:0 0 16px;font-size:.8125rem;font-weight:600;letter-spacing:.055em;text-transform:uppercase}
+.runway-contacts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.runway-contact{min-width:0}.runway-contact h4{margin:0 0 5px;font-size:1.0625rem;line-height:1.35;font-weight:600;color:var(--navy)}
+.runway-contact p{margin:0 0 8px;font-size:.875rem;line-height:1.45;color:var(--muted)}
+.runway-contact a{display:block;width:fit-content;max-width:100%;min-height:28px;font-size:.9375rem;overflow-wrap:anywhere}
+.runway-links{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:18px}
+.runway-links .platform-link{margin-top:0;min-width:180px;padding-top:0}
+.runway-general-mail{font-size:.9375rem;font-weight:600;overflow-wrap:anywhere}
+@media(max-width:800px){.runway-overview{grid-template-columns:170px minmax(0,1fr);gap:24px}.runway-contacts{gap:18px}.runway-contact-panel{padding:18px}}
+@media(max-width:600px){.startup-platform-section{margin-top:28px;padding-top:26px}.startup-platform-intro.lead{font-size:1.125rem;margin-bottom:24px}.runway-overview{grid-template-columns:minmax(0,1fr);gap:24px}.runway-brand{display:flex;align-items:center;gap:18px}.runway-logo{width:144px;height:56px;flex:0 0 144px;margin-bottom:0}.runway-contacts{grid-template-columns:minmax(0,1fr);gap:20px}.runway-contact+.runway-contact{padding-top:18px;border-top:1px solid var(--line)}.runway-contact-panel{margin-top:22px}.runway-links{align-items:flex-start;flex-direction:column;gap:8px}.runway-links .platform-link{width:100%}}
+@media(max-width:380px){.runway-brand{display:block}.runway-logo{margin-bottom:14px}}
+@media print{.startup-platform-section{break-before:auto}.runway-card{break-inside:avoid}.runway-contacts{grid-template-columns:repeat(3,minmax(0,1fr))}.runway-contact-panel{padding:14px}.runway-contact a{font-size:.8rem}}
