@@ -42,7 +42,7 @@
 .platform-icon.platform-icon-brand{flex-basis:112px;width:112px;background:transparent}.platform-icon-brand img{display:block;width:96px;height:48px;max-width:100%;object-fit:contain}
 
 /* Supplied Symbol_Petrol.svg retains its original colour and protection zone. */
-.platform-icon.platform-icon-ilo{flex-basis:112px;width:112px;height:56px;background:transparent}.platform-icon-ilo img{display:block;width:60px;height:56px;max-width:100%;object-fit:contain}
+.platform-icon.platform-icon-ilo{flex-basis:196px;width:196px;height:64px;max-width:100%;background:transparent}.platform-icon-ilo img{display:block;width:196px;height:64px;max-width:100%;object-fit:contain}
 
 /* Startup acceleration and TC Runway */
 .startup-platform-section{margin-top:40px;padding-top:32px;border-top:1px solid var(--line)}
@@ -88,3 +88,9 @@
 @media(max-width:900px){.home-platform-list{min-width:820px}.home-platform-scroll{scroll-snap-type:x proximity}.home-platform-tile{scroll-snap-align:start;padding-inline:14px}.home-platform-tile>.home-platform-wordmark{font-size:1.4rem}}
 @media(max-width:600px){.home-platforms-section{padding-block:23px 28px}.home-platform-tile{min-height:146px}.home-platform-tile>h3{font-size:1rem}}
 @media print{.home-platform-scroll{overflow:visible}.home-platform-list{min-width:0}.home-platform-tile{break-inside:avoid;min-height:110px;padding:12px 8px}.home-platform-tile>h3{font-size:.85rem}.home-platform-tile>.home-platform-wordmark{font-size:1.1rem}}
+
+/* Full Czech and English research infrastructure logotypes. */
+.home-platform-mark.home-platform-mark-ilo{width:100%;max-width:180px}
+.home-platform-mark-ilo img{width:180px;height:56px;max-width:100%;object-fit:contain}
+@media(min-width:601px) and (max-width:800px){.platform-icon.platform-icon-ilo{flex-basis:160px;width:160px}}
+@media(max-width:480px){#ilo .platform-card-top{flex-direction:column;align-items:flex-start;gap:12px}.platform-icon.platform-icon-ilo{flex-basis:auto;width:196px}}
