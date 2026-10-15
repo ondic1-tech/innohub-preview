@@ -1,0 +1,49 @@
+name: Import INNOHUB ILO logo assets
+on:
+  push:
+    paths:
+      - '.github/workflows/innohub-ilo-logo-import.yml'
+permissions: {}
+jobs:
+  read-official-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read official Czech and English logo SVGs
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, io, json, re, urllib.request, zipfile
+          req = urllib.request.Request(
+              'https://www.vyzkumne-infrastruktury.cz/wp-content/uploads/2018/11/logo-vyzkumne-infrastruktury.zip',
+              headers={'User-Agent': 'INNOHUB-brand-asset-import/1.0'})
+          with urllib.request.urlopen(req, timeout=45) as response:
+              archive = response.read(25 * 1024 * 1024 + 1)
+          if len(archive) > 25 * 1024 * 1024:
+              raise RuntimeError('Archive exceeds expected size')
+          package = zipfile.ZipFile(io.BytesIO(archive))
+          selected = []
+          for info in package.infolist():
+              if not info.filename.lower().endswith('.svg') or info.file_size > 2 * 1024 * 1024:
+                  continue
+              raw = package.read(info)
+              svg = raw.decode('utf-8-sig')
+              view = re.search(r'viewBox\s*=\s*["\x27]([^"\x27]+)["\x27]', svg, re.I)
+              if not view:
+                  continue
+              values = [float(x) for x in re.split(r'[\s,]+', view.group(1).strip())]
+              if len(values) != 4 or not values[3]:
+                  continue
+              ratio = values[2] / values[3]
+              petrol = '006666' in svg.lower()
+              print('INNOHUB_MANIFEST ' + json.dumps({'path': info.filename, 'viewBox': values, 'petrol': petrol}, ensure_ascii=True))
+              if 2.5 < ratio < 4.2 and petrol:
+                  selected.append((info.filename, raw, values))
+          if not selected or len(selected) > 10:
+              raise RuntimeError('Unexpected logo candidates: ' + str(len(selected)))
+          for path, raw, view in selected:
+              print('INNOHUB_SVG_BEGIN ' + json.dumps({'path': path, 'viewBox': view}, ensure_ascii=True))
+              encoded = base64.b64encode(raw).decode('ascii')
+              for offset in range(0, len(encoded), 1024):
+                  print('INNOHUB_SVG_DATA ' + encoded[offset:offset + 1024])
+              print('INNOHUB_SVG_END')
+          PY
