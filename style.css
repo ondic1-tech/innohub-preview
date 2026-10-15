@@ -63,3 +63,12 @@
 @media(max-width:600px){.startup-platform-section{margin-top:28px;padding-top:26px}.startup-platform-intro.lead{font-size:1.125rem;margin-bottom:24px}.runway-overview{grid-template-columns:minmax(0,1fr);gap:24px}.runway-brand{display:flex;align-items:center;gap:18px}.runway-logo{width:144px;height:56px;flex:0 0 144px;margin-bottom:0}.runway-contacts{grid-template-columns:minmax(0,1fr);gap:20px}.runway-contact+.runway-contact{padding-top:18px;border-top:1px solid var(--line)}.runway-contact-panel{margin-top:22px}.runway-links{align-items:flex-start;flex-direction:column;gap:8px}.runway-links .platform-link{width:100%}}
 @media(max-width:380px){.runway-brand{display:block}.runway-logo{margin-bottom:14px}}
 @media print{.startup-platform-section{break-before:auto}.runway-card{break-inside:avoid}.runway-contacts{grid-template-columns:repeat(3,minmax(0,1fr))}.runway-contact-panel{padding:14px}.runway-contact a{font-size:.8rem}}
+
+/* One TC Runway contact */
+.runway-contacts.runway-contacts-single{grid-template-columns:minmax(0,1fr)}
+.runway-contacts-single .runway-contact{display:grid;grid-template-columns:minmax(0,1fr) max-content max-content;grid-template-areas:"name email phone" "role email phone";gap:5px 28px;align-items:baseline}
+.runway-contacts-single .runway-contact h4{grid-area:name;margin-bottom:0}
+.runway-contacts-single .runway-contact p{grid-area:role;margin-bottom:0}
+.runway-contacts-single .runway-contact a[href^="mailto:"]{grid-area:email;align-self:center}
+.runway-contacts-single .runway-contact a[href^="tel:"]{grid-area:phone;align-self:center}
+@media(max-width:600px){.runway-contacts-single .runway-contact{grid-template-columns:minmax(0,1fr);grid-template-areas:"name" "role" "email" "phone";row-gap:6px}}
