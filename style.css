@@ -96,3 +96,31 @@
 .home-platform-mark-ilo img{width:180px;height:56px;max-width:100%;object-fit:contain}
 @media(min-width:601px) and (max-width:800px){.platform-icon.platform-icon-ilo{flex-basis:160px;width:160px}}
 @media(max-width:480px){#ilo .platform-card-top{flex-direction:column;align-items:flex-start;gap:12px}.platform-icon.platform-icon-ilo{flex-basis:auto;width:196px}}
+
+
+/* Commercialization Reactor: six Czech homepage tiles and paired startup programmes. */
+.home-platform-list.home-platform-list-six{grid-template-columns:repeat(6,minmax(0,1fr))}
+.home-platform-mark.home-platform-mark-reactor{width:100%;max-width:140px}
+.home-platform-mark-reactor img{width:140px;height:auto;max-height:56px}
+.startup-platform-title{font-size:1.75rem;margin:0 0 18px}
+.startup-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.startup-project-brand{display:flex;align-items:center;gap:15px;min-height:82px;margin-bottom:18px}
+.startup-project-brand>img{display:block;width:58px;height:58px;flex:0 0 58px;object-fit:contain}
+.startup-project-brand h2{font-size:1.6875rem;margin:0 0 7px;letter-spacing:-.02em}
+.startup-project-card .platform-description{font-size:1.0625rem;line-height:1.5;margin-bottom:20px}
+.startup-project-card .platform-role p{font-size:1.0625rem}
+.startup-project-runway-brand{flex-direction:column;align-items:flex-start;justify-content:center;gap:12px}
+.startup-project-wordmark{font-family:Arial,sans-serif;font-size:1.8125rem;font-weight:700;line-height:1.15;letter-spacing:-.055em;color:var(--navy);white-space:nowrap}
+.startup-project-wordmark span{color:var(--blue)}
+.startup-project-fit{font-size:.9375rem;color:var(--muted);line-height:1.4;margin:18px 0 0}
+.startup-project-mail{display:block;width:fit-content;font-size:.9375rem;margin-top:12px;overflow-wrap:anywhere}
+.startup-project-contact{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:24px;padding:22px 24px;background:var(--pale);border-left:2px solid var(--blue);border-radius:var(--radius)}
+.startup-project-contact-title{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--navy);margin:0 0 7px}
+.startup-project-contact-name{font-size:1.25rem;font-weight:600;color:var(--navy);margin:0}
+.startup-project-contact-links{display:flex;flex-direction:column;gap:4px;font-size:1rem;overflow-wrap:anywhere}
+.startup-project-contact-action{display:inline-flex;align-items:center;justify-content:center;background:var(--navy);color:var(--white);padding:12px 19px;border-radius:3px;text-decoration:none;font-size:1rem;font-weight:600;min-height:44px}
+.startup-project-contact-action:hover{color:var(--white);background:#083458}
+@media(max-width:900px){.home-platform-list.home-platform-list-six{min-width:0;grid-template-columns:repeat(3,minmax(0,1fr))}.home-platform-list-six .home-platform-tile:nth-child(3){border-right:0}.home-platform-list-six .home-platform-tile:nth-child(-n+3){border-bottom:1px solid var(--line)}}
+@media(max-width:760px){.startup-project-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:420px){.home-platform-list.home-platform-list-six{grid-template-columns:repeat(2,minmax(0,1fr))}.home-platform-list-six .home-platform-tile:nth-child(n){border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.home-platform-list-six .home-platform-tile:nth-child(2n){border-right:0}.home-platform-list-six .home-platform-tile:nth-last-child(-n+2){border-bottom:0}.startup-project-brand:not(.startup-project-runway-brand){flex-direction:column;align-items:flex-start;gap:12px}.startup-project-contact{padding:20px}.startup-project-contact-action{width:100%}}
+@media print{.home-platform-list.home-platform-list-six{min-width:0;grid-template-columns:repeat(6,minmax(0,1fr))}.startup-project-grid{grid-template-columns:1fr 1fr}.startup-project-card{break-inside:avoid}}
