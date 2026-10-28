@@ -1,0 +1,41 @@
+
+    
+    
+    
+    .aturno-reference-card *{box-sizing:border-box}
+    .case-card.aturno-reference-card{width:100%;margin:0;background:#fff;border:1px solid #d6e4ed;border-radius:4px;overflow:hidden}
+    .aturno-reference-card .ar-photo{display:block;width:100%;height:auto;aspect-ratio:1280/843;object-fit:contain}
+    .aturno-reference-card .ar-body{padding:24px}
+    .aturno-reference-card .ar-category{color:#008cd2;font-size:14px;line-height:1.3;font-weight:600;margin:0 0 10px}
+    .aturno-reference-card .ar-name{color:#0a416e;font-size:28px;line-height:1.15;font-weight:600;margin:0 0 4px;letter-spacing:-.02em}
+    .aturno-reference-card .ar-company{color:#576e80;font-size:14px;margin:0 0 21px}
+    .aturno-reference-card h3{color:#0a416e;font-size:23px;line-height:1.22;font-weight:600;margin:0 0 13px;letter-spacing:-.015em}
+    .aturno-reference-card .ar-description{font-size:17px;line-height:1.5;color:#576e80;margin:0 0 20px}
+    .aturno-reference-card .ar-result{border-left:2px solid #008cd2;background:#f0f8fd;padding:14px 16px;margin-bottom:18px}
+    .aturno-reference-card .ar-result strong{display:block;color:#0a416e;font-size:17px;line-height:1.35;font-weight:600}
+    .aturno-reference-card .ar-result small{display:block;color:#576e80;font-size:13px;margin-top:6px}
+    .aturno-reference-card .ar-programme{font-size:14px;font-weight:600;color:#0a416e;margin:0 0 14px}
+    .aturno-reference-card summary{font-size:17px;font-weight:600;color:#0a416e;text-decoration:underline;text-underline-offset:4px;padding:8px 0;min-height:40px}
+    .aturno-reference-card summary::marker{color:#008cd2}
+    .aturno-reference-card .ar-story{margin-top:16px;padding-top:18px;border-top:1px solid #d6e4ed}
+    .aturno-reference-card .ar-story h4{font-size:17px;line-height:1.3;font-weight:600;color:#0a416e;margin:0 0 8px}
+    .aturno-reference-card .ar-story p{font-size:16px;margin:0 0 18px;line-height:1.5;color:#576e80}
+    .aturno-reference-card .ar-story a{font-size:15px;color:#0a416e;text-underline-offset:4px;display:inline-block;padding-block:8px}
+    @media(max-width:380px){.aturno-reference-card .ar-body{padding:20px}.aturno-reference-card h3{font-size:22px}}
+    @media(pointer:coarse){.aturno-reference-card summary,.aturno-reference-card .ar-story a{min-height:44px}}
+  
+.case-card.aturno-reference-card{display:flex;flex-direction:column;align-self:start;font-family:Noway,Arial,sans-serif}.aturno-reference-card .ar-photo{max-height:300px;background:var(--pale)}
+@media(min-width:601px) and (max-width:900px){.case-card.aturno-reference-card{display:grid;grid-template-columns:220px minmax(0,1fr);align-items:start}.aturno-reference-card .ar-photo{height:auto;max-height:none}}
+
+.aturno-reference-card .ar-heading{padding:24px;background:#F0F8FD;border-bottom:1px solid var(--line)}
+.aturno-reference-card .ar-heading .ar-company{margin-bottom:0}
+.aturno-reference-card .ar-tagline{padding:24px}
+.aturno-reference-card .ar-tagline h3{margin-bottom:0}
+@media(max-width:380px){.aturno-reference-card .ar-heading,.aturno-reference-card .ar-tagline{padding:20px}}
+@media(min-width:601px) and (max-width:900px){.aturno-reference-card .ar-heading,.aturno-reference-card .ar-tagline{grid-column:1/-1}}
+
+.aturno-reference-card summary{display:flex;align-items:center;gap:8px;list-style:none;cursor:pointer;text-decoration:none}
+.aturno-reference-card summary::-webkit-details-marker{display:none}
+.aturno-reference-card .ar-toggle-arrow{display:inline-flex;align-items:center;justify-content:center;flex:0 0 12px;height:18px;color:#008cd2;font-size:12px;line-height:1}
+.aturno-reference-card details[open]>summary .ar-toggle-arrow{transform:rotate(90deg)}
+.aturno-reference-card .ar-summary-label{text-decoration:underline;text-underline-offset:4px}
