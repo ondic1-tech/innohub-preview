@@ -12,3 +12,11 @@ psp-space-prototype.jpg
 Source: PSP Technologies, PSP SPACE project, final presentation v2,
 slide "NEW DEVICE GENERATION v2.x", photograph "v2.1 assembly - single mirror".
 Used with the permission supplied by the website owner for this reference.
+
+antivenom-research-ai.jpg
+Original AI-generated illustration of snake venom collection for antivenom research.
+Created with OpenAI's built-in image generation tool for this website on 2026-10-29.
+Generated as a new scene from a text prompt; no source photograph was supplied.
+This is an illustrative synthetic image, not a documentary photograph of the UMG project.
+The Creative Commons attribution above applies only to the archived
+antivenom-venom-extraction.jpg file, which is no longer displayed in the reference.
