@@ -52,10 +52,12 @@
 .umg-reference-card .ar-heading .ar-company{padding-block:14px}
 @media(max-width:380px){.umg-reference-card .ar-heading .ar-company{padding-block:12px}}
 @media(min-width:901px){
-  .case-grid-with-aturno{grid-template-rows:auto auto;row-gap:0}
-  .case-grid-with-aturno>.case-card{grid-row:1/span 2}
+  .case-grid-with-aturno{grid-template-rows:repeat(6,auto);row-gap:0}
+  .case-grid-with-aturno>.case-card{grid-row:1/span 6}
   .case-grid-with-aturno>.aturno-reference-card{display:grid;grid-template-rows:subgrid;align-self:stretch}
-  .aturno-reference-card .ar-content{display:block;align-self:start;min-width:0}
+  .aturno-reference-card .ar-content{display:grid;grid-template-rows:subgrid;grid-row:2/span 5;align-self:stretch;min-width:0}
+  .aturno-reference-card .ar-body{display:grid;grid-template-rows:subgrid;grid-row:3/span 3;min-width:0}
+  .aturno-reference-card .ar-body>:is(.ar-description,.ar-programme,details){align-self:start}
   .aturno-reference-card:not(.umg-reference-card) .ar-heading{display:flex;flex-direction:column;justify-content:space-between}
   .aturno-reference-card:not(.umg-reference-card) .ar-heading :is(.ar-category,.ar-name){margin-bottom:0}
 }
