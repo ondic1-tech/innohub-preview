@@ -6,7 +6,7 @@
     .case-card.aturno-reference-card{width:100%;margin:0;background:#fff;border:1px solid #d6e4ed;border-radius:4px;overflow:hidden}
     .aturno-reference-card .ar-photo{display:block;width:100%;height:auto;aspect-ratio:1280/843;object-fit:contain}
     .aturno-reference-card .ar-body{padding:24px}
-    .aturno-reference-card .ar-category{color:#008cd2;font-size:14px;line-height:1.3;font-weight:600;margin:0 0 10px}
+    .aturno-reference-card .ar-category{color:#008cd2;font-size:16.8px;line-height:1.3;font-weight:600;margin:0 0 10px}
     .aturno-reference-card .ar-name{color:#0a416e;font-size:28px;line-height:1.15;font-weight:600;margin:0 0 4px;letter-spacing:-.02em}
     .aturno-reference-card .ar-company{color:#576e80;font-size:14px;margin:0 0 21px}
     .aturno-reference-card h3{color:#0a416e;font-size:23px;line-height:1.22;font-weight:600;margin:0 0 13px;letter-spacing:-.015em}
@@ -30,7 +30,7 @@
 .aturno-reference-card .ar-heading{padding:24px;background:#F0F8FD;border-bottom:1px solid var(--line)}
 .aturno-reference-card .ar-heading .ar-company{margin-bottom:0}
 .aturno-reference-card .ar-tagline{padding:24px}
-.aturno-reference-card .ar-tagline h3{margin-bottom:0}
+.aturno-reference-card .ar-tagline h3{margin-bottom:0;line-height:1.464}
 @media(max-width:380px){.aturno-reference-card .ar-heading,.aturno-reference-card .ar-tagline{padding:20px}}
 @media(min-width:601px) and (max-width:900px){.aturno-reference-card .ar-heading,.aturno-reference-card .ar-tagline{grid-column:1/-1}}
 
@@ -42,8 +42,6 @@
 
 .aturno-reference-card .ar-content{display:contents}
 .psp-reference-card .ar-photo{object-fit:cover}
-.psp-reference-card .ar-category{font-size:16.8px}
-.psp-reference-card .ar-tagline h3{line-height:1.464}
 .aturno-reference-card .ar-figure{position:relative;margin:0}
 .aturno-reference-card .ar-photo-credit{position:absolute;inset:auto 0 0;padding:5px 10px;background:rgba(255,255,255,.94);color:var(--muted);font-size:12px;line-height:1.35}
 .aturno-reference-card .ar-photo-credit a{color:inherit;text-underline-offset:2px}
