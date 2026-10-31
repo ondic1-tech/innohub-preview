@@ -1,3 +1,4 @@
+.page-heading:has(+.news-section)>div{width:100%;min-width:0}.page-heading:has(+.news-section) .lead{max-width:none}
 .news-section{--news-visible:3;--news-gap:24px;padding-bottom:44px}
 .news-toolbar{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:22px}
 .news-range{color:var(--muted);font-size:.9375rem;margin:0}
