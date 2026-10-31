@@ -1,0 +1,24 @@
+INNOHUB news imagery
+
+innohub-tc-praha.jpg
+Technology Centre Prague official photograph of its headquarters.
+https://www.tc.cz/en/about-us
+https://www.tc.cz/files_public/images/thumb-1320-609-budova-tc-av-cr_vyrez-novy-web.jpg
+
+elignite.png
+Existing INNOHUB site illustration of laser research, reused from assets/lasers.png.
+
+ignition-event.png
+Official promotional artwork for the 25th Commercialization Reactor Ignition Event.
+Commercialization Reactor.
+https://www.commercializationreactor.com/ignition-event/
+https://www.commercializationreactor.com/wp-content/uploads/2026/10/25IE-Logo-1-1092x683.png
+
+cih-ii.jpg
+Illustrative photograph of a cybersecurity exercise at CyberCampus.
+Source: CyberSecurityHubCZ / Masaryk University.
+https://www.cybersecurityhub.cz/aktualne/clanky/novy-kyberneticky-utok-na-nemocnice-tentokrat-nanecisto-cyberrangecz-uci-it-a-kyber-specialisty-jak-branit-kritickou-infrastrukturu
+https://cdn.muni.cz/media/4018536/00dcfe5c-b819-4df2-b71a-bdb260adc738.jpg?width=1170
+
+These are organisational/project assets used for the requested INNOHUB site update.
+No Creative Commons licence is asserted. Original rights remain with the respective owners.

@@ -1,0 +1,38 @@
+.news-section{--news-visible:3;--news-gap:24px;padding-bottom:44px}
+.news-toolbar{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:22px}
+.news-range{color:var(--muted);font-size:.9375rem;margin:0}
+.news-controls{display:flex;align-items:center;gap:10px}
+.news-controls[hidden]{display:none}
+.news-nav{display:inline-flex;justify-content:center;align-items:center;width:44px;height:44px;padding:0;border:1px solid var(--blue);border-radius:var(--radius);background:var(--white);color:var(--blue);cursor:pointer;transition:background .18s,color .18s}
+.news-nav svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2}
+.news-nav:hover:not(:disabled){background:var(--blue);color:white}
+.news-nav:disabled{color:#a7bbc8;border-color:var(--line);background:var(--pale);cursor:default}
+.news-nav:focus-visible,.news-summary:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.news-viewport{min-width:0}
+.news-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--news-gap);align-items:start}
+.news-section.is-enhanced .news-viewport{overflow:hidden;padding:5px;margin:-5px}
+.news-section.is-enhanced .news-track{display:flex;gap:var(--news-gap);transition:transform .35s ease;will-change:transform}
+.news-section.is-enhanced .news-card{flex:0 0 calc((100% - 48px)/3)}
+.news-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:var(--white)}
+.news-photo{display:block;width:100%;height:208px;object-fit:cover;background:var(--pale)}
+.news-photo-promo{object-fit:contain;background:#121124;padding:12px}
+.news-card-heading{padding:24px 24px 20px;background:var(--pale);border-bottom:1px solid var(--line)}
+.news-card h2{min-height:3.9em;margin:0 0 12px;font-size:1.5rem;line-height:1.3;font-weight:600;letter-spacing:-.015em;color:var(--navy)}
+.news-date{display:block;color:var(--muted);font-size:.9375rem;line-height:1.4}
+.news-card-body{padding:24px}
+.news-abstract{min-height:10.5em;margin:0 0 22px;color:var(--muted);font-size:1.0625rem;line-height:1.5}
+.news-summary{display:flex;align-items:center;gap:8px;width:fit-content;min-height:24px;list-style:none;cursor:pointer;font-size:1rem;font-weight:600;color:var(--navy)}
+.news-summary::-webkit-details-marker{display:none}
+.news-summary::marker{content:''}
+.news-toggle-arrow{display:inline-flex;align-items:center;justify-content:center;flex:0 0 12px;color:var(--blue);font-size:12px;transition:transform .18s}
+.news-summary-label{text-decoration:underline;text-underline-offset:4px}
+.news-detail[open]>.news-summary .news-toggle-arrow{transform:rotate(90deg)}
+.news-full{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);font-size:1.0625rem;line-height:1.55;color:var(--muted);overflow-wrap:anywhere}
+.news-full p{margin:0 0 18px}
+.news-full a{font-size:1rem;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.news-bottom{margin-top:36px}
+@media(max-width:1100px) and (min-width:901px){.news-card-heading,.news-card-body{padding:20px}.news-card h2{font-size:1.375rem;min-height:5.2em}.news-abstract{min-height:12em}}
+@media(max-width:900px){.news-section{--news-visible:2;--news-gap:20px}.news-track{grid-template-columns:repeat(2,minmax(0,1fr))}.news-section.is-enhanced .news-card{flex-basis:calc((100% - 20px)/2)}.news-card-heading,.news-card-body{padding:22px}.news-card h2{min-height:5.2em}.news-abstract{min-height:12em}}
+@media(max-width:600px){.news-section{--news-visible:1;--news-gap:18px;padding-bottom:32px}.news-track{grid-template-columns:minmax(0,1fr)}.news-section.is-enhanced .news-card{flex-basis:100%}.news-toolbar{gap:12px;margin-bottom:18px}.news-card h2{font-size:1.5rem;min-height:0}.news-abstract{min-height:0}.news-photo{height:218px}.news-card-heading,.news-card-body{padding:22px}.news-bottom{margin-top:28px}}
+@media(prefers-reduced-motion:reduce){.news-section.is-enhanced .news-track,.news-nav,.news-toggle-arrow{transition:none}}
+@media print{.news-toolbar{display:none}.news-section.is-enhanced .news-viewport{overflow:visible}.news-section.is-enhanced .news-track{display:grid;grid-template-columns:1fr 1fr;transform:none!important}.news-card{break-inside:avoid}.news-photo{height:150px}.news-card h2,.news-abstract{min-height:0}.news-card[inert]{visibility:visible}}
