@@ -6,9 +6,6 @@ document.querySelectorAll('[data-news-carousel]').forEach(carousel=>{
   const next=carousel.querySelector('[data-news-next]');
   const status=carousel.querySelector('[data-news-status]');
   const en=document.documentElement.lang==='en';
-  const singular=carousel.dataset.statusSingular||(en?'News':'Novinka');
-  const plural=carousel.dataset.statusPlural||(en?'News':'Novinky');
-  const of=carousel.dataset.statusOf||(en?'of':'ze');
   let index=0;
   const visibleCount=()=>Number.parseInt(getComputedStyle(carousel).getPropertyValue('--news-visible'),10)||3;
   const update=()=>{
@@ -20,8 +17,8 @@ document.querySelectorAll('[data-news-carousel]').forEach(carousel=>{
     previous.disabled=index===0;
     next.disabled=index>=cards.length-visible;
     status.textContent=visible===1
-      ?`${singular} ${index+1} ${of} ${cards.length}`
-      :`${plural} ${index+1}–${index+visible} ${of} ${cards.length}`;
+      ?(en?`News ${index+1} of ${cards.length}`:`Novinka ${index+1} ze ${cards.length}`)
+      :(en?`News ${index+1}–${index+visible} of ${cards.length}`:`Novinky ${index+1}–${index+visible} ze ${cards.length}`);
     cards.forEach((card,position)=>{
       const hidden=position<index||position>=index+visible;
       card.inert=hidden;
