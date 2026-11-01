@@ -8,10 +8,10 @@ if(linkedinDisclosure){
   linkedinDisclosure.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse')setLinkedinOpen(true);});
   linkedinDisclosure.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse'&&!pinned&&!linkedinDisclosure.contains(document.activeElement))setLinkedinOpen(false);});
   trigger.addEventListener('click',event=>{event.preventDefault();pinned=!pinned;setLinkedinOpen(pinned);});
-  trigger.addEventListener('focus',()=>setLinkedinOpen(true));
-  trigger.addEventListener('blur',()=>{if(!pinned)setLinkedinOpen(false);});
+  linkedinDisclosure.addEventListener('focusin',()=>setLinkedinOpen(true));
+  linkedinDisclosure.addEventListener('focusout',event=>{if(!pinned&&!linkedinDisclosure.contains(event.relatedTarget))setLinkedinOpen(false);});
   document.addEventListener('pointerdown',event=>{if(!linkedinDisclosure.contains(event.target)){pinned=false;setLinkedinOpen(false);}});
-  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&linkedinDisclosure.open){pinned=false;setLinkedinOpen(false);}});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&linkedinDisclosure.open){event.preventDefault();pinned=false;trigger.focus();setLinkedinOpen(false);}});
 }
 const serviceTabs=Array.from(document.querySelectorAll('[data-service]'));
 if(serviceTabs.length){
