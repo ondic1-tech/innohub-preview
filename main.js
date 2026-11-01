@@ -13,8 +13,16 @@ if(linkedinDisclosure){
   document.addEventListener('pointerdown',event=>{if(!linkedinDisclosure.contains(event.target)){pinned=false;setLinkedinOpen(false);}});
   document.addEventListener('keydown',event=>{if(event.key==='Escape'&&linkedinDisclosure.open){pinned=false;setLinkedinOpen(false);}});
 }
-const serviceTabs=Array.from(document.querySelectorAll('[role="tab"][data-service]'));
+const serviceTabs=Array.from(document.querySelectorAll('[data-service]'));
 if(serviceTabs.length){
+  const tablist=serviceTabs[0].parentElement;
+  tablist.setAttribute('role','tablist');
+  tablist.setAttribute('aria-orientation','vertical');
+  serviceTabs.forEach(tab=>{
+    tab.setAttribute('role','tab');
+    const panel=document.getElementById(tab.getAttribute('aria-controls'));
+    if(panel){panel.setAttribute('role','tabpanel');panel.tabIndex=0;}
+  });
   const selectService=(id,updateUrl=false)=>{
     const selected=serviceTabs.find(tab=>tab.dataset.service===id)||serviceTabs[0];
     serviceTabs.forEach(tab=>{
@@ -40,7 +48,12 @@ if(serviceTabs.length){
       event.preventDefault();serviceTabs[next].focus();selectService(serviceTabs[next].dataset.service,true);
     });
   });
-  const syncService=()=>selectService(location.hash.slice(1));
+  const syncService=()=>{
+    const id=location.hash.slice(1);
+    selectService(id);
+    const tab=serviceTabs.find(item=>item.dataset.service===id);
+    if(tab)document.getElementById(tab.getAttribute('aria-controls')).scrollIntoView({block:'start'});
+  };
   window.addEventListener('hashchange',syncService);
   window.addEventListener('popstate',syncService);
   syncService();

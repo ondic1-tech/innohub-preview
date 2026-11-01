@@ -124,3 +124,11 @@
 @media(max-width:760px){.startup-project-grid{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:420px){.home-platform-list.home-platform-list-six{grid-template-columns:repeat(2,minmax(0,1fr))}.home-platform-list-six .home-platform-tile:nth-child(n){border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.home-platform-list-six .home-platform-tile:nth-child(2n){border-right:0}.home-platform-list-six .home-platform-tile:nth-last-child(-n+2){border-bottom:0}.startup-project-brand:not(.startup-project-runway-brand){flex-direction:column;align-items:flex-start;gap:12px}.startup-project-contact{padding:20px}.startup-project-contact-action{width:100%}}
 @media print{.home-platform-list.home-platform-list-six{min-width:0;grid-template-columns:repeat(6,minmax(0,1fr))}.startup-project-grid{grid-template-columns:1fr 1fr}.startup-project-card{break-inside:avoid}}
+
+/* Responsive sources preserve the approved layout. */
+picture.responsive-image{display:contents}
+.service-tab-panels [role="tabpanel"]{scroll-margin-top:24px}
+.service-tab-panels .detail-intro .service-panel-title{font-size:clamp(2.125rem,3.4vw,3rem);font-weight:600;margin-bottom:24px}
+
+.aturno-reference-card .ar-content>picture.responsive-image{display:block;min-width:0}
+@media(min-width:901px){.aturno-reference-card .ar-content>picture.responsive-image{grid-row:2}}

@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+# HTML noindex stays active until innohub.cz launch is explicitly confirmed.
+Sitemap: https://innohub.cz/sitemap.xml
