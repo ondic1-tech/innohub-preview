@@ -15,13 +15,17 @@ if(linkedinDisclosure){
 }
 const serviceTabs=Array.from(document.querySelectorAll('[data-service]'));
 if(serviceTabs.length){
+  let keyboardNavigation=false;
+  const panelOutline=panel=>{panel.style.outline=keyboardNavigation?'2px solid #008CD2':'none';panel.style.outlineOffset='4px';};
+  document.addEventListener('keydown',event=>{if(event.key==='Tab'){keyboardNavigation=true;const panel=document.activeElement;if(panel?.getAttribute('role')==='tabpanel')panelOutline(panel);}});
+  document.addEventListener('pointerdown',()=>{keyboardNavigation=false;const panel=document.activeElement;if(panel?.getAttribute('role')==='tabpanel')panelOutline(panel);});
   const tablist=serviceTabs[0].parentElement;
   tablist.setAttribute('role','tablist');
   tablist.setAttribute('aria-orientation','vertical');
   serviceTabs.forEach(tab=>{
     tab.setAttribute('role','tab');
     const panel=document.getElementById(tab.getAttribute('aria-controls'));
-    if(panel){panel.setAttribute('role','tabpanel');panel.tabIndex=0;}
+    if(panel){panel.setAttribute('role','tabpanel');panel.tabIndex=0;panelOutline(panel);panel.addEventListener('focus',()=>panelOutline(panel));}
   });
   const selectService=(id,updateUrl=false)=>{
     const selected=serviceTabs.find(tab=>tab.dataset.service===id)||serviceTabs[0];
