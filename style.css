@@ -132,3 +132,61 @@ picture.responsive-image{display:contents}
 
 .aturno-reference-card .ar-content>picture.responsive-image{display:block;min-width:0}
 @media(min-width:901px){.aturno-reference-card .ar-content>picture.responsive-image{grid-row:2}}
+
+/* Department header: TC Praha above, INNOHUB alongside the navigation. */
+.masthead-department .brand-row{min-height:104px;gap:24px}
+.masthead-department .parent-brand{gap:32px;min-width:0}
+.masthead-department .tc-logo{width:180px;flex-shrink:0}
+.masthead-department .department-name{margin:0;padding-left:32px;border-left:1px solid var(--line);font-size:1.1875rem;font-weight:400;line-height:1.35;color:var(--navy)}
+.masthead-department .languages{flex-shrink:0}
+.masthead-department .nav-inner{display:flex;align-items:center;gap:48px;min-height:80px}
+.masthead-department .brand{align-items:center;min-height:64px}
+.masthead-department .wordmark{font-size:2.5rem;transform:translateY(.2em)}
+.masthead-department .nav-list{flex:1;justify-content:space-between;gap:20px;margin:0}
+.masthead-department .nav-list a{min-height:80px;white-space:nowrap}
+@media(max-width:1100px){
+ .masthead-department .nav-inner{gap:36px}
+ .masthead-department .nav-list{gap:18px}
+}
+@media(max-width:900px){
+ .masthead-department .nav-inner{gap:26px}
+ .masthead-department .wordmark{font-size:2.125rem}
+ .masthead-department .nav-list{gap:15px}
+ .masthead-department .nav-list a{font-size:.9375rem}
+}
+@media(max-width:800px){
+ .masthead-department .brand-row{min-height:92px;gap:20px}
+ .masthead-department .tc-logo{width:156px}
+ .masthead-department .parent-brand{gap:22px}
+ .masthead-department .department-name{font-size:1rem;padding-left:22px;max-width:230px}
+ .masthead-department .nav-inner{min-height:76px;flex-wrap:wrap;gap:0 24px;padding-block:8px}
+ .masthead-department .brand{min-height:58px}
+ .masthead-department .wordmark{font-size:2.375rem}
+ .masthead-department .menu-toggle{display:flex;align-items:center;gap:10px;margin-left:auto;min-height:44px;font-size:.9375rem}
+ .masthead-department .menu-icon{width:18px;height:13px;border-top:2px solid currentColor;border-bottom:2px solid currentColor;position:relative}
+ .masthead-department .menu-icon:after{content:'';position:absolute;top:4px;left:0;width:100%;height:2px;background:currentColor}
+ .masthead-department .nav-list{display:none;flex:0 0 100%;flex-direction:column;gap:0;margin:8px 0 4px}
+ .masthead-department .nav-list.open{display:flex}
+ .masthead-department .nav-list a{min-height:48px;padding:10px 14px;border-bottom:1px solid var(--line);white-space:normal;font-size:1rem}
+ .masthead-department .nav-list a.active{background:var(--pale);border-left:3px solid var(--blue)}
+}
+@media(max-width:480px){
+ .masthead-department .brand-row{min-height:88px;gap:12px}
+ .masthead-department .parent-brand{gap:15px}
+ .masthead-department .tc-logo{width:130px}
+ .masthead-department .department-name{max-width:114px;padding-left:15px;font-size:.875rem;line-height:1.3}
+ .masthead-department .languages{font-size:.8125rem;gap:7px}
+}
+@media(max-width:360px){
+ .masthead-department .tc-logo{width:112px}
+ .masthead-department .parent-brand{gap:10px}
+ .masthead-department .department-name{padding-left:10px;max-width:101px;font-size:.8125rem}
+ .masthead-department .languages{gap:6px}
+}
+@media print{
+ .masthead-department .brand-row{min-height:80px}
+ .masthead-department .navigation{display:block;border:0}
+ .masthead-department .nav-inner{min-height:56px;padding:0}
+ .masthead-department .nav-list,.masthead-department .menu-toggle{display:none}
+ .masthead-department .wordmark{font-size:2rem}
+}
