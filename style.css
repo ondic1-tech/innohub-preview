@@ -149,3 +149,10 @@ picture.responsive-image{display:contents}
 .brand-caption .brand-sub{display:block;transform:none}
 .brand-row>.languages{transform:translateY(.2rem)}
 @media(max-width:800px){.brand-caption{display:none}.brand-row>.brand{transform:translateY(.5rem)}}
+
+/* Match INNOHUB letter height to the two-line TC Praha name. */
+.brand-row .wordmark{font-size:2rem}
+.brand-row>.brand{transform:translateY(.44rem)}
+@media(max-width:800px){.brand-row .wordmark{font-size:1.675rem}.brand-row>.brand{transform:translateY(.37rem)}}
+@media(max-width:600px){.brand-row .wordmark{font-size:1.333rem}.brand-row>.brand{transform:translateY(.29rem)}}
+@media(max-width:360px){.brand-row .wordmark{font-size:1.025rem}.brand-row>.brand{transform:translateY(.225rem)}}
