@@ -133,62 +133,11 @@ picture.responsive-image{display:contents}
 .aturno-reference-card .ar-content>picture.responsive-image{display:block;min-width:0}
 @media(min-width:901px){.aturno-reference-card .ar-content>picture.responsive-image{grid-row:2}}
 
-/* TC Praha above a single navigation row; palette from horizontevropa.cz. */
-.masthead-department .brand-row{gap:24px}
-.masthead-department .parent-brand{gap:32px;min-width:0}
-.masthead-department .tc-logo{width:180px;flex-shrink:0}
-.masthead-department .department-name{margin:0;padding-left:32px;border-left:1px solid var(--line);font-size:1.1875rem;font-weight:400;line-height:1.35;color:var(--navy)}
-.masthead-department .languages{flex-shrink:0}
-.masthead-department .navigation{background:#008cd2;border:0;box-shadow:0 4px 7px #00000026}
-.masthead-department .nav-inner{display:flex;align-items:center;min-height:70px}
-.masthead-department .nav-home{display:flex;align-items:center;position:relative;overflow:hidden;flex-shrink:0;min-height:70px;color:#fff;text-decoration:none;font-size:1.125rem;font-weight:600;letter-spacing:normal}
-.masthead-department .nav-list{display:flex;flex:1;justify-content:space-between;gap:20px;margin:0}
-.masthead-department .nav-list a{position:relative;overflow:hidden;min-height:70px;padding:0;border:0;color:rgba(255,255,255,.8);font-size:1.125rem;font-weight:600;white-space:nowrap}
-.masthead-department .nav-list .nav-home{color:#fff}
-.masthead-department .nav-list a:hover,.masthead-department .nav-list a:focus-visible,.masthead-department .nav-list a.active,.masthead-department .nav-home:hover,.masthead-department .nav-home:focus-visible{color:#fff;background:transparent}
-.masthead-department .nav-list a.active:after,.masthead-department .nav-home.active:after{content:'';position:absolute;left:0;right:0;bottom:-8px;width:16px;height:16px;margin:auto;border-radius:50%;background:#fff}
-.masthead-department .navigation a:focus-visible{outline:3px solid #fff;outline-offset:-4px}
-@media(max-width:1100px){
- .masthead-department .nav-list{gap:8px}
-}
-@media(max-width:900px){
- .masthead-department .nav-inner{display:block;min-height:64px;padding-block:0}
- .masthead-department .nav-list .nav-home{min-height:64px;padding:0}
- .masthead-department .menu-toggle{display:flex;align-items:center;justify-content:center;width:48px;height:48px;min-height:48px;margin:0;padding:0;border:0;border-radius:50%;background:#0a416e;color:#fff;font-size:0;flex-shrink:0}
- .masthead-department .menu-toggle:hover,.masthead-department .menu-toggle:focus-visible{background:#fff;color:#0a416e}
- .masthead-department .menu-toggle:focus-visible{outline:3px solid #fff;outline-offset:3px}
- .masthead-department .menu-icon{width:20px;height:14px;border-top:2px solid currentColor;border-bottom:2px solid currentColor;position:relative}
- .masthead-department .menu-icon:after{content:'';position:absolute;top:4px;left:0;width:100%;height:2px;background:currentColor}
- .masthead-department .nav-list{display:flex;flex-direction:column;gap:0;margin:0;padding:0;border:0}
- .masthead-department .nav-list>.nav-home-item{display:flex;align-items:center;justify-content:space-between;gap:20px}
- .masthead-department .nav-list>li:not(.nav-home-item){display:none}
- .masthead-department .nav-list.open{padding-bottom:12px}
- .masthead-department .nav-list.open>li:not(.nav-home-item){display:block}
- .masthead-department .nav-list.open>li:nth-child(2){border-top:1px solid #ffffff40}
- .masthead-department .nav-list a{min-height:50px;padding:8px 12px;white-space:normal}
- .masthead-department .nav-list a.active:after{display:none}
- .masthead-department .nav-list a.active{box-shadow:inset 3px 0 0 #fff}
-}
-@media(max-width:800px){
- .masthead-department .brand-row{gap:20px}
- .masthead-department .tc-logo{width:156px}
- .masthead-department .parent-brand{gap:22px}
- .masthead-department .department-name{font-size:1rem;padding-left:22px;max-width:230px}
-}
-@media(max-width:480px){
- .masthead-department .brand-row{gap:12px}
- .masthead-department .parent-brand{gap:15px}
- .masthead-department .tc-logo{width:130px}
- .masthead-department .department-name{max-width:114px;padding-left:15px;font-size:.875rem;line-height:1.3}
- .masthead-department .languages{font-size:.8125rem;gap:7px}
-}
-@media(max-width:360px){
- .masthead-department .tc-logo{width:112px}
- .masthead-department .parent-brand{gap:10px}
- .masthead-department .department-name{padding-left:10px;max-width:101px;font-size:.8125rem}
- .masthead-department .languages{gap:6px}
-}
-@media print{
- .masthead-department .brand-row{min-height:80px}
- .masthead-department .navigation{display:none}
-}
+/* Menu palette only: retain the published layout and text positions. */
+.masthead .navigation{background-color:#008cd2;border-color:#008cd2}
+.masthead .navigation .nav-list a{color:rgba(255,255,255,.8)}
+.masthead .navigation .nav-list a:hover,.masthead .navigation .nav-list a:focus-visible,.masthead .navigation .nav-list a.active{color:#fff;border-color:#fff}
+.masthead .navigation .nav-list a.active{background-color:transparent}
+.masthead .navigation .menu-toggle{color:#fff;background-color:#0a416e;border-color:#0a416e}
+.masthead .navigation .menu-toggle:hover,.masthead .navigation .menu-toggle:focus-visible{color:#0a416e;background-color:#fff;border-color:#fff}
+.masthead .navigation a:focus-visible,.masthead .navigation button:focus-visible{outline-color:#fff}
