@@ -157,8 +157,7 @@ picture.responsive-image{display:contents}
 @media(max-width:600px){.brand-row .wordmark{font-size:1.333rem}.brand-row>.brand{transform:translateY(.29rem)}}
 @media(max-width:360px){.brand-row .wordmark{font-size:1.025rem}.brand-row>.brand{transform:translateY(.225rem)}}
 
-/* Center the uppercase caption; its cap height matches the logo's lowercase n.
-   Noway glyph heights: regular H 1434, bold n 1155 font units. */
-.brand-caption{left:50%;top:calc(50% + .1683rem);transform:translate(-50%,-50%);text-align:center}
-.brand-caption .brand-sub{font-size:calc(2rem * 1155 / 1434);line-height:1;text-transform:uppercase;border-left:0;padding-left:0}
-@media(min-width:801px) and (max-width:950px){.brand-row .tc-logo{width:133px}.brand-row .wordmark{font-size:1.675rem}.brand-caption{top:calc(50% + .141rem)}.brand-caption .brand-sub{font-size:calc(1.675rem * 1155 / 1434)}.brand-row>.brand{transform:translateY(.37rem)}}
+/* Keep the uppercase caption beside TC and centered on the header's horizontal axis.
+   Its cap height matches the INNOHUB logo's lowercase n (1155 / 1434 font units). */
+.brand-caption .brand-sub{font-size:calc(2rem * 1155 / 1434);line-height:1;text-transform:uppercase}
+@media(min-width:801px) and (max-width:950px){.brand-row .tc-logo{width:133px}.brand-row .wordmark{font-size:1.675rem}.brand-caption .brand-sub{font-size:calc(1.675rem * 1155 / 1434)}.brand-row>.brand{transform:translateY(.37rem)}}
