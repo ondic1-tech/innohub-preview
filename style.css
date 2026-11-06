@@ -156,3 +156,7 @@ picture.responsive-image{display:contents}
 @media(max-width:800px){.brand-row .wordmark{font-size:1.675rem}.brand-row>.brand{transform:translateY(.37rem)}}
 @media(max-width:600px){.brand-row .wordmark{font-size:1.333rem}.brand-row>.brand{transform:translateY(.29rem)}}
 @media(max-width:360px){.brand-row .wordmark{font-size:1.025rem}.brand-row>.brand{transform:translateY(.225rem)}}
+
+/* Equal visible text height across the three header identities. */
+.brand-caption .brand-sub{font-size:2rem;line-height:1}
+@media(min-width:801px) and (max-width:950px){.brand-row .tc-logo{width:133px}.brand-row .wordmark,.brand-caption .brand-sub{font-size:1.675rem}.brand-row>.brand{transform:translateY(.37rem)}}
