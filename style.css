@@ -142,28 +142,23 @@ picture.responsive-image{display:contents}
 .masthead .navigation .menu-toggle:hover,.masthead .navigation .menu-toggle:focus-visible{color:#0a416e;background-color:#fff;border-color:#fff}
 .masthead .navigation a:focus-visible,.masthead .navigation button:focus-visible{outline-color:#fff}
 
-/* Keep the caption at its original desktop position while swapping logos. */
-.brand-row{position:relative}
-.brand-row>.brand{margin-left:0;transform:translateY(.6rem)}
+/* Enlarge header marks and text by 20% without changing the header height.
+   Noway's optical offset and cap-height ratio keep the visible lettering centred. */
+.brand-row{--header-wordmark:2.4rem;--header-offset:.528rem;--header-tc-width:190.8px;--header-language-size:1.05rem;position:relative;height:100px}
+.brand-row>.brand{margin-left:0;transform:translateY(var(--header-offset))}
+.brand-row .wordmark{font-size:var(--header-wordmark)}
 .brand-caption{position:absolute;left:calc(40px + 8.859375rem + 22px);top:50%;transform:translateY(-50%);text-decoration:none}
-.brand-caption .brand-sub{display:block;transform:none}
-.brand-row>.languages{transform:translateY(.2rem)}
-@media(max-width:800px){.brand-caption{display:none}.brand-row>.brand{transform:translateY(.5rem)}}
-
-/* Match INNOHUB letter height to the two-line TC Praha name. */
-.brand-row .wordmark{font-size:2rem}
-.brand-row>.brand{transform:translateY(.44rem)}
-@media(max-width:800px){.brand-row .wordmark{font-size:1.675rem}.brand-row>.brand{transform:translateY(.37rem)}}
-@media(max-width:600px){.brand-row .wordmark{font-size:1.333rem}.brand-row>.brand{transform:translateY(.29rem)}}
-@media(max-width:360px){.brand-row .wordmark{font-size:1.025rem}.brand-row>.brand{transform:translateY(.225rem)}}
-
-/* Keep the uppercase caption beside TC and centered on the header's horizontal axis.
-   Its cap height matches the INNOHUB logo's lowercase n (1155 / 1434 font units). */
-.brand-caption .brand-sub{font-size:calc(2rem * 1155 / 1434);line-height:1;text-transform:uppercase;font-weight:600}
-@media(min-width:801px) and (max-width:950px){.brand-row .tc-logo{width:133px}.brand-row .wordmark{font-size:1.675rem}.brand-caption .brand-sub{font-size:calc(1.675rem * 1155 / 1434)}.brand-row>.brand{transform:translateY(.37rem)}}
-
-/* Swap only the two logo positions; retain all existing sizes and caption placement. */
-.brand-row>.parent-logo{margin-left:auto}
+.brand-caption .brand-sub{display:block;transform:none;font-size:calc(var(--header-wordmark) * 1155 / 1434);line-height:1;text-transform:uppercase;font-weight:600}
+.brand-row>.parent-logo{display:flex;align-items:center;flex-shrink:0;margin-left:auto}
+.brand-row .tc-logo{width:var(--header-tc-width)}
+.brand-row>.languages{flex-shrink:0;gap:13.2px;font-size:var(--header-language-size);line-height:1;transform:none}
+.brand-row>.languages>a.selected{transform:translateY(.3em)}
+.brand-row>.languages>a:not(.selected){transform:translateY(-.03em)}
+@media(min-width:801px) and (max-width:1100px){.brand-row{padding-inline:32px;gap:12px}.brand-caption{position:static;transform:none;flex-shrink:0}}
+@media(min-width:801px) and (max-width:950px){.brand-row{--header-wordmark:2.01rem;--header-offset:.444rem;--header-tc-width:159.6px;gap:6px}.brand-caption .brand-sub{padding-left:16px}}
+@media(max-width:800px){.brand-row{--header-wordmark:2.01rem;--header-offset:.444rem;--header-tc-width:159.6px;height:88px}.brand-caption{display:none}}
+@media(max-width:600px){.brand-row{--header-wordmark:1.5996rem;--header-offset:.348rem;--header-tc-width:127.2px;--header-language-size:.975rem;height:82px}.brand-row>.languages{gap:8.4px}}
+@media(max-width:360px){.brand-row{--header-wordmark:1.23rem;--header-offset:.27rem;--header-tc-width:97.2px}.brand-row>.languages{gap:7.2px}}
 
 /* Align the visible top of the heading with the adjacent services panel. */
 @media(min-width:601px){.home-hero .hero-copy h1{margin-top:-.15em}}
