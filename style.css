@@ -151,6 +151,10 @@ picture.responsive-image{display:contents}
 .brand-caption .brand-sub{display:block;transform:none;font-size:calc(var(--header-wordmark) * 1155 / 1434);line-height:1;text-transform:uppercase;font-weight:600}
 .brand-row>.parent-logo{display:flex;align-items:center;flex-shrink:0;margin-left:auto}
 .brand-row .tc-logo{width:var(--header-tc-width)}
+/* The English PNG has white margins. Match the artwork height to the Czech SVG
+   (107.82 / 350.64 versus 898 / 3237), keeping the same horizontal logo slot. */
+html[lang="en"] .brand-row>.parent-logo{width:var(--header-tc-width);justify-content:center}
+html[lang="en"] .brand-row .tc-logo{width:calc(var(--header-tc-width) * 1.1084196915);max-width:none;flex-shrink:0}
 .brand-row>.languages{flex-shrink:0;gap:13.2px;font-size:var(--header-language-size);line-height:1;transform:none}
 .brand-row>.languages>a.selected{transform:translateY(.3em)}
 .brand-row>.languages>a:not(.selected){transform:translateY(-.03em)}
