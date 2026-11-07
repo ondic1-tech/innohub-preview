@@ -144,7 +144,7 @@ picture.responsive-image{display:contents}
 
 /* Keep the caption at its original desktop position while swapping logos. */
 .brand-row{position:relative}
-.brand-row>.brand{margin-left:auto;transform:translateY(.6rem)}
+.brand-row>.brand{margin-left:0;transform:translateY(.6rem)}
 .brand-caption{position:absolute;left:calc(40px + 8.859375rem + 22px);top:50%;transform:translateY(-50%);text-decoration:none}
 .brand-caption .brand-sub{display:block;transform:none}
 .brand-row>.languages{transform:translateY(.2rem)}
@@ -161,3 +161,6 @@ picture.responsive-image{display:contents}
    Its cap height matches the INNOHUB logo's lowercase n (1155 / 1434 font units). */
 .brand-caption .brand-sub{font-size:calc(2rem * 1155 / 1434);line-height:1;text-transform:uppercase}
 @media(min-width:801px) and (max-width:950px){.brand-row .tc-logo{width:133px}.brand-row .wordmark{font-size:1.675rem}.brand-caption .brand-sub{font-size:calc(1.675rem * 1155 / 1434)}.brand-row>.brand{transform:translateY(.37rem)}}
+
+/* Swap only the two logo positions; retain all existing sizes and caption placement. */
+.brand-row>.parent-logo{margin-left:auto}
