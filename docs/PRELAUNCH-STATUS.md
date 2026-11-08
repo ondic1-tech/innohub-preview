@@ -10,10 +10,11 @@ Tento záznam rozlišuje provedenou práci od zbývajících podmínek původní
 - [x] 0.2 Zadavatel výslovně potvrdil **ponechat kontaktní formulář v CZ i EN**.
   Informace o dřívějším požadavku na odstranění v původním checklistu je chybná.
 - [ ] 0.3 Provozní podklady k současnému hostingu a DNS načteny. Konkrétní odpovědnosti,
-  správce HTTPS/DNS a vlastník schválení zbývají potvrdit. Přístupové údaje ani
+  správce HTTPS/DNS zbývá určit. **Ostré spuštění schvaluje Ondřej Šimek**, potvrzeno
+  zadavatelem v tomto zadání. Přístupové údaje ani
   interní provozní podklady se nekopírují do veřejného repozitáře.
-- [ ] 0.4 Současný GitHub Pages náhled je veřejný a má noindex. Požadavek na
-  autentizovaný staging a jeho shodu s produkcí zbývá uzavřít.
+- [ ] 0.4 Zadavatel schválil veřejný GitHub náhled; autentizace není požadována.
+  Noindex zůstává. Shoda stagingového prostředí s produkčním hostingem zbývá ověřit.
 - [x] 1.1 Varianta B: stávající formulář zachován v obou jazycích.
 - [ ] 1.2–1.4 Posouzení poskytovatele FormSubmit a osobních údajů, skutečné doručení,
   aktivace schránky, výpadky, antispam a limity nejsou dosud uzavřeny.
