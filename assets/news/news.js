@@ -17,8 +17,8 @@ document.querySelectorAll('[data-news-carousel]').forEach(carousel=>{
     previous.disabled=index===0;
     next.disabled=index>=cards.length-visible;
     status.textContent=visible===1
-      ?(en?`News ${index+1} of ${cards.length}`:`Novinka ${index+1} ze ${cards.length}`)
-      :(en?`News ${index+1}–${index+visible} of ${cards.length}`:`Novinky ${index+1}–${index+visible} ze ${cards.length}`);
+      ?(en?`News item ${index+1} of ${cards.length}`:`Novinka ${index+1} ze ${cards.length}`)
+      :(en?`News items ${index+1}–${index+visible} of ${cards.length}`:`Novinky ${index+1}–${index+visible} ze ${cards.length}`);
     cards.forEach((card,position)=>{
       const hidden=position<index||position>=index+visible;
       card.inert=hidden;
