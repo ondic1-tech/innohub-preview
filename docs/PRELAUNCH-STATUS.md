@@ -8,6 +8,7 @@ Další provedené kontroly a omezení: [druhý průchod](PRELAUNCH-SECOND-PASS.
 Konkrétní úkoly k předání: [správce hostingu](HOSTING-TASKS.md).
 Testy a zbývající ověření formuláře: [formulář](FORM-REVIEW.md).
 Dokončené výchozí měření 20 profilů a navazující opravy: [PageSpeed](PAGESPEED-BASELINE.md).
+Záloha aktuálního webu a testovací nasazení: [hosting](HOSTING-STAGING.md).
 
 ## Rozhodnutí a první etapa
 
@@ -26,6 +27,8 @@ Dokončené výchozí měření 20 profilů a navazující opravy: [PageSpeed](P
 - [x] 1.1 Varianta B: stávající formulář zachován v obou jazycích.
 - [ ] 1.2–1.4 Posouzení poskytovatele FormSubmit a osobních údajů, skutečné doručení,
   aktivace schránky, výpadky, antispam a limity nejsou dosud uzavřeny.
+  **Zadavatel nyní výslovně odložil formulář a požádal pokračovat v nasazování.**
+  Formulář se nemaže; tato výjimka neznamená potvrzení funkčnosti.
   Jeden schválený živý pokus potvrdil blokaci neprovedenou aktivací; příjemce
   musí potvrdit aktivační e-mail. Viz FORM-ACTIVATION-DIAGNOSIS.md.
 - [x] 1.5 Staticky prověřeno 67 HTML souborů, 83 obrázků a 1 073 místních odkazů
@@ -87,8 +90,14 @@ Protokoly: `prelaunch-static-validation.json`, `prelaunch-http-validation.json`.
 - [ ] 4.2–4.3 Místní sitemap/canonical/hreflang a strukturovaná data ověřeny;
   indexovatelnost skutečné produkce, úplná kontrola metadat a sdílení zbývají.
 - [x] 4.4 README a robots komentář odpovídají náhledovému režimu.
-- [ ] 4.5, etapy 5–7 Nasazení, nácvik obnovy skutečného hostingu, úplný stagingový
-  protokol, G2/G3, ostré spuštění, G4 a následná kontrola se dosud neprovedly.
+- [ ] 4.5 DNS ponecháno, aktuální živý web plně zálohován a ZIP součty ověřeny.
+  Skutečný provozní návrat na ostrém hostingu se dosud necvičil.
+- [x] 5.1 Kandidát 7797261 nasazen na https://innohub.cz/prelaunch-7797261/ na
+  stejném hostingu, samostatná testovací konfigurace, zakázaná indexace.
+- [ ] 5.2–5.4 Všech 145 souborů kandidáta, hlavičky, 404 a základní CZ/EN scénáře
+  ověřeny; úplný testovací protokol, kandidátní Lighthouse, přístupnost a schválení
+  G2/G3 zbývají. Původní soubory a hlavní web zůstaly beze změny.
+- [ ] Etapy 6–7 Ostré spuštění, G4 a následné provozní kontroly nebyly provedeny.
 
 Před jakýmkoli produkčním přepisem uložit stávající web a konfiguraci mimo webroot,
 ověřit obnovitelnost zálohy, zaznamenat schválené release SHA a kontrolní součty.

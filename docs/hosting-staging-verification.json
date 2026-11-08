@@ -1,0 +1,29 @@
+{
+  "result": {
+    "sourceCommit": "779726152e9fbad9340710eb980d46532c570d85",
+    "base": "https://innohub.cz/prelaunch-7797261/",
+    "publicFilesChecked": 143,
+    "failures": [],
+    "notFound": {
+      "status": 404,
+      "noindex": true,
+      "baseCorrect": true,
+      "robots": "noindex, follow"
+    },
+    "liveHomepageUnchanged": true
+  },
+  "transfer": {
+    "stagingConfigurationVerified": true,
+    "emptyMarkerVerified": true,
+    "originalFilesUnchanged": 139,
+    "checkedAt": "2026-11-08T20:08:13.792Z"
+  },
+  "sampleHeaders": {
+    "robots": "noindex, follow",
+    "nosniff": "nosniff",
+    "referrer": "strict-origin-when-cross-origin",
+    "permissions": "camera=(), microphone=(), geolocation=()",
+    "framing": "DENY",
+    "cspReportOnly": "default-src 'self'; script-src 'self' 'sha256-neUlmrB07Fq63ZuTwQK2Gzj/dL0v8L5q5nM994YWDo8='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formsubmit.co; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self' https://formsubmit.co"
+  }
+}
