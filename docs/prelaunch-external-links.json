@@ -1,0 +1,249 @@
+{
+  "checkedAt": "2026-11-08T19:00:00.738Z",
+  "results": [
+    {
+      "url": "https://www.linkedin.com/company/tc-innohub/",
+      "status": 403,
+      "finalURL": "https://www.linkedin.com/company/tc-innohub/",
+      "sourcePages": [
+        "404.html",
+        "en/case-studies/bbt-twins/index.html",
+        "en/case-studies/index.html",
+        "en/case-studies/psp/index.html",
+        "en/case-studies/toseda/index.html",
+        "en/contact/index.html",
+        "en/index.html",
+        "en/news/index.html",
+        "en/platforms/index.html",
+        "en/programmes/cybersecurity/index.html",
+        "en/programmes/elignite/index.html",
+        "en/programmes/esa/index.html",
+        "en/programmes/ilo/index.html",
+        "en/programmes/index.html",
+        "en/programmes/reactor/index.html",
+        "en/programmes/runway/index.html",
+        "en/services/index.html",
+        "en/team/index.html",
+        "index.html",
+        "kontakt/index.html",
+        "novinky/index.html",
+        "platformy/index.html",
+        "programy/cyber/index.html",
+        "programy/elignite/index.html",
+        "programy/esa/index.html",
+        "programy/ilo/index.html",
+        "programy/index.html",
+        "programy/reactor/index.html",
+        "programy/runway/index.html",
+        "reference/bbt-twins/index.html",
+        "reference/index.html",
+        "reference/psp/index.html",
+        "reference/toseda/index.html",
+        "sluzby/index.html",
+        "tym/index.html"
+      ]
+    },
+    {
+      "url": "https://www.tc.cz/cs/novinky/853/predstavujeme-uspesne-zadatele-o-financovani-spark...",
+      "status": 200,
+      "finalURL": "https://www.tc.cz/cs/novinky/853/predstavujeme-uspesne-zadatele-o-financovani-spark...",
+      "sourcePages": [
+        "en/case-studies/bbt-twins/index.html",
+        "reference/bbt-twins/index.html"
+      ]
+    },
+    {
+      "url": "https://plasmashockpeening.com/about-us",
+      "status": 200,
+      "finalURL": "https://plasmashockpeening.com/about-us",
+      "sourcePages": [
+        "en/case-studies/psp/index.html",
+        "reference/psp/index.html"
+      ]
+    },
+    {
+      "url": "https://tc.cz/",
+      "status": 200,
+      "finalURL": "https://www.tc.cz/cs",
+      "sourcePages": [
+        "404.html",
+        "en/case-studies/bbt-twins/index.html",
+        "en/case-studies/index.html",
+        "en/case-studies/psp/index.html",
+        "en/case-studies/toseda/index.html",
+        "en/contact/index.html",
+        "en/index.html",
+        "en/news/index.html",
+        "en/platforms/index.html",
+        "en/programmes/cybersecurity/index.html",
+        "en/programmes/elignite/index.html",
+        "en/programmes/esa/index.html",
+        "en/programmes/ilo/index.html",
+        "en/programmes/index.html",
+        "en/programmes/reactor/index.html",
+        "en/programmes/runway/index.html",
+        "en/services/index.html",
+        "en/team/index.html",
+        "index.html",
+        "kontakt/index.html",
+        "novinky/index.html",
+        "platformy/index.html",
+        "programy/cyber/index.html",
+        "programy/elignite/index.html",
+        "programy/esa/index.html",
+        "programy/ilo/index.html",
+        "programy/index.html",
+        "programy/reactor/index.html",
+        "programy/runway/index.html",
+        "reference/bbt-twins/index.html",
+        "reference/index.html",
+        "reference/psp/index.html",
+        "reference/toseda/index.html",
+        "sluzby/index.html",
+        "tym/index.html"
+      ]
+    },
+    {
+      "url": "https://www.commercializationreactor.com/ignition-event/",
+      "status": 200,
+      "finalURL": "https://www.commercializationreactor.com/ignition-event/",
+      "sourcePages": [
+        "en/news/index.html",
+        "novinky/index.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps/search/?api=1&query=Ve+Struh%C3%A1ch+1076%2F27+Praha",
+      "status": 200,
+      "finalURL": "https://www.google.com/maps/search/?api=1&query=Ve+Struh%C3%A1ch+1076/27+Praha&ucbcb=1",
+      "sourcePages": [
+        "en/contact/index.html",
+        "kontakt/index.html"
+      ]
+    },
+    {
+      "url": "https://indico.eli-laser.eu/event/261/",
+      "status": 200,
+      "finalURL": "https://indico.eli-laser.eu/event/261/",
+      "sourcePages": [
+        "en/platforms/index.html",
+        "platformy/index.html"
+      ]
+    },
+    {
+      "url": "https://esa-technology-broker.cz/toseda-bd-sensors/",
+      "status": 200,
+      "finalURL": "https://esa-technology-broker.cz/toseda-bd-sensors/",
+      "sourcePages": [
+        "en/case-studies/toseda/index.html",
+        "reference/toseda/index.html"
+      ]
+    },
+    {
+      "url": "https://esa-technology-broker.cz/",
+      "status": 200,
+      "finalURL": "https://esa-technology-broker.cz/",
+      "sourcePages": [
+        "en/platforms/index.html",
+        "en/programmes/esa/index.html",
+        "platformy/index.html",
+        "programy/esa/index.html"
+      ]
+    },
+    {
+      "url": "https://www.cybersecurityhub.cz/en",
+      "status": 200,
+      "finalURL": "https://www.cybersecurityhub.cz/en",
+      "sourcePages": [
+        "en/platforms/index.html"
+      ]
+    },
+    {
+      "url": "https://plasmashockpeening.com/",
+      "status": 200,
+      "finalURL": "https://plasmashockpeening.com/",
+      "sourcePages": [
+        "en/case-studies/index.html",
+        "reference/index.html"
+      ]
+    },
+    {
+      "url": "https://www.tc.cz/cs/novinky/1039/projekt-elignite-uspel-v-programu-horizon...",
+      "status": 200,
+      "finalURL": "https://www.tc.cz/cs/novinky/1039/projekt-elignite-uspel-v-programu-horizon...",
+      "sourcePages": [
+        "en/programmes/elignite/index.html",
+        "programy/elignite/index.html"
+      ]
+    },
+    {
+      "url": "https://www.commercializationreactor.com/",
+      "status": 200,
+      "finalURL": "https://www.commercializationreactor.com/",
+      "sourcePages": [
+        "en/platforms/index.html",
+        "en/programmes/reactor/index.html",
+        "platformy/index.html",
+        "programy/reactor/index.html"
+      ]
+    },
+    {
+      "url": "https://www.tc.cz/cs/novinky/1053/mate-technologii-s-komercnim-potencialem-zapojte",
+      "status": 200,
+      "finalURL": "https://www.tc.cz/cs/novinky/1053/mate-technologii-s-komercnim-potencialem-zapojte",
+      "sourcePages": [
+        "en/programmes/reactor/index.html",
+        "programy/reactor/index.html"
+      ]
+    },
+    {
+      "url": "https://orp.tc.cz/en/our-services/participation-in-projects",
+      "status": 200,
+      "finalURL": "https://orp.tc.cz/en/our-services/participation-in-projects",
+      "sourcePages": [
+        "en/platforms/index.html"
+      ]
+    },
+    {
+      "url": "https://esa-technology-broker.cz/spark-funding/",
+      "status": 200,
+      "finalURL": "https://esa-technology-broker.cz/spark-funding/",
+      "sourcePages": [
+        "en/programmes/esa/index.html",
+        "programy/esa/index.html"
+      ]
+    },
+    {
+      "url": "https://www.tc-runway.cz/en/home/",
+      "status": 200,
+      "finalURL": "https://www.tc-runway.cz/en/home/",
+      "sourcePages": [
+        "en/platforms/index.html"
+      ]
+    },
+    {
+      "url": "https://www.cybersecurityhub.cz/",
+      "status": 200,
+      "finalURL": "https://www.cybersecurityhub.cz/",
+      "sourcePages": [
+        "platformy/index.html"
+      ]
+    },
+    {
+      "url": "https://www.tc-runway.cz/",
+      "status": 200,
+      "finalURL": "https://www.tc-runway.cz/",
+      "sourcePages": [
+        "platformy/index.html"
+      ]
+    },
+    {
+      "url": "https://orp.tc.cz/cs/nase-sluzby/technologicky-transfer",
+      "status": 200,
+      "finalURL": "https://orp.tc.cz/cs/nase-sluzby/technologicky-transfer",
+      "sourcePages": [
+        "platformy/index.html"
+      ]
+    }
+  ]
+}

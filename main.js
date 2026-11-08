@@ -145,6 +145,7 @@ if(inquiryForm){
     }catch(error){
       status.classList.add('error');
       status.textContent=failure;
+      status.focus();
     }finally{
       clearTimeout(timeout);
       button.disabled=false;
