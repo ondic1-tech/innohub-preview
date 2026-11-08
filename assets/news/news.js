@@ -1,10 +1,12 @@
 document.querySelectorAll('[data-news-carousel]').forEach(carousel=>{
   const viewport=carousel.querySelector('[data-news-viewport]');
   const track=carousel.querySelector('[data-news-track]');
+  if(!viewport||!track)return;
   const cards=Array.from(track.children);
   const previous=carousel.querySelector('[data-news-prev]');
   const next=carousel.querySelector('[data-news-next]');
   const status=carousel.querySelector('[data-news-status]');
+  if(!previous||!next||!status||!cards.length)return;
   const en=document.documentElement.lang==='en';
   let index=0;
   const visibleCount=()=>Number.parseInt(getComputedStyle(carousel).getPropertyValue('--news-visible'),10)||3;
@@ -21,8 +23,8 @@ document.querySelectorAll('[data-news-carousel]').forEach(carousel=>{
       :(en?`News items ${index+1}–${index+visible} of ${cards.length}`:`Novinky ${index+1}–${index+visible} ze ${cards.length}`);
     cards.forEach((card,position)=>{
       const hidden=position<index||position>=index+visible;
-      card.inert=hidden;
-      card.setAttribute('aria-hidden',String(hidden));
+      if(card.inert!==hidden)card.inert=hidden;
+      if(card.getAttribute('aria-hidden')!==String(hidden))card.setAttribute('aria-hidden',String(hidden));
       if(hidden)card.querySelectorAll('details[open]').forEach(detail=>detail.open=false);
     });
   };
@@ -38,9 +40,12 @@ document.querySelectorAll('[data-news-carousel]').forEach(carousel=>{
   });
   carousel.classList.add('is-enhanced');
   carousel.querySelector('.news-controls').hidden=false;
-  let frame;
-  const resize=()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(update)};
-  if('ResizeObserver' in window)new ResizeObserver(resize).observe(viewport);
+  let frame=0,lastWidth=viewport.getBoundingClientRect().width;
+  const resize=()=>{if(!frame)frame=requestAnimationFrame(()=>{frame=0;update();});};
+  if('ResizeObserver' in window)new ResizeObserver(entries=>{
+    const width=entries[0].contentRect.width;
+    if(width!==lastWidth){lastWidth=width;resize();}
+  }).observe(viewport);
   else window.addEventListener('resize',resize);
   update();
 });

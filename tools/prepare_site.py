@@ -78,6 +78,9 @@ def webp(p):
         if im.mode not in ('RGB','RGBA'):im=im.convert('RGBA' if 'transparency' in source.info else 'RGB')
         widths=sorted(set([min(im.width,w) for w in (360,720,1080)]))
         if im.width<=200:widths=[im.width]
+        if p.name=='tc-logo-en.png':widths=[min(im.width,1079)]
+        elif p.name in ('commercialization-reactor-symbol.png','commercialization-reactor-wordmark.png'):
+            widths=sorted(set([min(im.width,180)]+widths))
         result=[]
         for width in widths:
             path=ASSETS/f'{name}-{width}.webp'
@@ -101,6 +104,10 @@ for p in sorted(DIST.rglob('*.html')):
         continue
     en=bool(re.search(r'<html[^>]*lang="en"',s))
     lang='en' if en else 'cs'
+    # All three weights are used above the fold; preserve anonymous font CORS.
+    s=re.sub(r'<link\b(?=[^>]*\brel="preload")(?=[^>]*\bas="font")[^>]*>','',s)
+    preloads=''.join(tag('link',{'rel':'preload','as':'font','type':'font/woff2','crossorigin':'anonymous','href':local_url(p,DIST/f'assets/noway-{weight}.woff2')}) for weight in ('regular','medium','bold'))
+    s=re.sub(r'<link\b[^>]*rel="stylesheet"[^>]*>',lambda m:preloads+m[0],s,count=1)
     if p.relative_to(DIST).as_posix() in ('sluzby/index.html','en/services/index.html'):
         s=re.sub(r'id="panel-([a-z]+)"',r'id="\1"',s)
         s=re.sub(r'aria-controls="panel-([a-z]+)"',r'aria-controls="\1"',s)
@@ -122,7 +129,7 @@ for p in sorted(DIST.rglob('*.html')):
         a.setdefault('decoding','async')
         path=(p.parent/urlsplit(src).path).resolve()
         name=path.name
-        if name in alt_overrides:a['alt']=alt_overrides[name][1 if en else 0]
+        if name in alt_overrides and not a.get('alt'):a['alt']=alt_overrides[name][1 if en else 0]
         if 'team/' in src and a.get('alt'):a['alt']=re.sub(r'^(?:Portrét |Portrait of )','',a['alt']);a['alt']=('Portrait of ' if en else 'Portrét ')+a['alt']
         meaningful_photo=('news-photo' in a.get('class','') or 'ar-photo' in a.get('class','') or 'team/' in src or name=='lasers.png')
         if meaningful_photo:
@@ -137,6 +144,9 @@ for p in sorted(DIST.rglob('*.html')):
             if 'news-photo' in a.get('class',''):sizes='(max-width:600px) calc(100vw - 44px), (max-width:900px) calc((100vw - 100px)/2), 370px'
             elif 'ar-photo' in a.get('class',''):sizes='(max-width:600px) calc(100vw - 44px), (max-width:900px) 220px, 370px'
             elif 'team/' in src:sizes='140px'
+            elif 'tc-logo' in a.get('class',''):sizes='(max-width:360px) 108px, (max-width:600px) 141px, (max-width:950px) 177px, 212px'
+            elif name=='commercialization-reactor-symbol.png':sizes='58px'
+            elif name=='commercialization-reactor-wordmark.png':sizes='140px'
             else:sizes=str(a.get('width','420'))+'px'
             source=tag('source',{'type':'image/webp','srcset':', '.join(local_url(p,path)+' '+str(width)+'w' for width,path in vs),'sizes':sizes})
             return '<picture class="responsive-image">'+source+tag('img',a)+'</picture>'
@@ -146,14 +156,10 @@ for p in sorted(DIST.rglob('*.html')):
     s=re.sub(r'(<a\b[^>]*href=")([^"?#]*)index\.html([#?][^"]*)?("[^>]*>)',lambda m:m[0] if urlsplit(m[2]).scheme or m[2].startswith('//') else m[1]+(m[2] or './')+(m[3] or '')+m[4],s)
     title=plain(re.search(r'<title>(.*?)</title>',s,re.S)[1])
     path=p.relative_to(DIST).as_posix()
-    if path=='index.html':title='INNOHUB – komercializace výzkumu a rozvoj inovací'
-    if path=='en/index.html':title='INNOHUB – research commercialisation and innovation'
     s=re.sub(r'<title>.*?</title>','<title>'+escape(title)+'</title>',s,flags=re.S)
     descriptions=[attrs(m[0]).get('content','') for m in re.finditer(r'<meta\b[^>]*>',s) if attrs(m[0]).get('name')=='description']
     assert len(descriptions)==1,(p,descriptions)
     description=descriptions[0]
-    if path=='kontakt/index.html':description='Kontaktujte TC Business Innovation Hub: podpora inovací, komercializace výzkumu a rozvoj firem. Napište na innohub@tc.cz nebo zavolejte +420 608 231 659.'
-    if path=='en/contact/index.html':description='Contact TC Business Innovation Hub for research commercialisation, innovation and business development. Email innohub@tc.cz or call +420 608 231 659.'
     s=meta(s,'description',description)
     s=meta(s,'robots','index,follow,max-image-preview:large' if INDEX and path!='404.html' else 'noindex,follow')
     s=re.sub(r'<meta name="keywords"[^>]*>','',s)
@@ -167,7 +173,7 @@ for p in sorted(DIST.rglob('*.html')):
     for k,v in [('twitter:card','summary_large_image'),('twitter:title',title),('twitter:description',description),('twitter:image',default_image),('twitter:image:alt','Technology Centre Prague building' if en else 'Budova Technologického centra Praha')]:s=meta(s,k,v)
     # Discard stale JSON-LD, replacing it with one connected and factual graph.
     s=re.sub(r'<script type="application/ld\+json">[\s\S]*?</script>','',s)
-    graph=[{'@type':'Organization','@id':ORIGIN+'/#organization','name':'TC Business Innovation Hub','alternateName':'INNOHUB','url':ORIGIN+'/','email':'innohub@tc.cz','parentOrganization':{'@type':'Organization','name':'Technologické centrum Praha','url':'https://www.tc.cz/'},'address':{'@type':'PostalAddress','streetAddress':'Ve Struhách 1076/27','addressLocality':'Praha 6','postalCode':'160 00','addressCountry':'CZ'}},
+    graph=[{'@type':'Organization','@id':ORIGIN+'/#organization','name':'TC Business Innovation Hub','alternateName':'INNOHUB','url':ORIGIN+'/','email':'innohub@tc.cz','parentOrganization':{'@type':'Organization','name':'Technology Centre Prague' if en else 'Technologické centrum Praha','url':'https://www.tc.cz/'},'address':{'@type':'PostalAddress','streetAddress':'Ve Struhách 1076/27','addressLocality':'Praha 6','postalCode':'160 00','addressCountry':'CZ'}},
            {'@type':'WebSite','@id':ORIGIN+'/#website','name':'INNOHUB · TC Business Innovation Hub','url':ORIGIN+'/','publisher':{'@id':ORIGIN+'/#organization'},'inLanguage':['cs','en']},
            {'@type':'ContactPage' if path in ('kontakt/index.html','en/contact/index.html') else 'WebPage','@id':canonical+'#webpage','name':title,'description':description,'url':canonical,'inLanguage':lang,'isPartOf':{'@id':ORIGIN+'/#website'},'about':{'@id':ORIGIN+'/#organization'}}]
     crumb=re.search(r'<nav class="breadcrumb"[^>]*>(.*?)</nav>',s,re.S)
