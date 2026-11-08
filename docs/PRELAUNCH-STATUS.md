@@ -26,6 +26,8 @@ Dokončené výchozí měření 20 profilů a navazující opravy: [PageSpeed](P
 - [x] 1.1 Varianta B: stávající formulář zachován v obou jazycích.
 - [ ] 1.2–1.4 Posouzení poskytovatele FormSubmit a osobních údajů, skutečné doručení,
   aktivace schránky, výpadky, antispam a limity nejsou dosud uzavřeny.
+  Jeden schválený živý pokus potvrdil blokaci neprovedenou aktivací; příjemce
+  musí potvrdit aktivační e-mail. Viz FORM-ACTIVATION-DIAGNOSIS.md.
 - [x] 1.5 Staticky prověřeno 67 HTML souborů, 83 obrázků a 1 073 místních odkazů
   a zdrojů včetně kotev, ID a verzovaných CSS/JS. Žádné chyby po opravě cache klíčů.
 - [x] 1.6 Zkontrolováno všech 20 jedinečných externích HTTP(S) odkazů: 19 bez chyby,

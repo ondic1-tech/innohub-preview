@@ -10,6 +10,10 @@ function setup(lang,fetchImpl,values={name:'Test',surname:'Example',email:'test@
  return {form,button,status,fields,classes,attributes,calls,submit:()=>handlers.submit({preventDefault(){}}),timeout:()=>timeout(),cleared:()=>cleared};
 }
 for(const lang of ['cs','en']){
+ test(lang+': real activation-required response is distinguished before generic success validation',async()=>{
+  const app=setup(lang,async()=>({ok:true,json:async()=>({success:'false',message:"This form needs Activation. We've sent you an email containing an 'Activate Form' link. Just click it and your form will be actived!"})}));
+  await app.submit();assert.equal(app.fields.hidden,false);assert.equal(app.form.resetCalled,undefined);assert.equal(app.classes.has('success'),false);assert.equal(app.classes.has('error'),true);assert.equal(app.status.focused,true);assert.match(app.status.textContent,lang==='en'?/not available yet/:/není zprovozněný/);assert.equal(app.button.disabled,false);
+ });
  test(lang+': successful response hides fields only after acknowledgement and sends no URL query',async()=>{
   const app=setup(lang,async()=>({ok:true,json:async()=>({success:true})}));await app.submit();assert.equal(app.calls.length,1);assert.equal(app.calls[0][0],'https://formsubmit.co/ajax/innohub@tc.cz');assert.equal(JSON.parse(app.calls[0][1].body)._url,'https://preview.example/contact/');assert.equal(app.fields.hidden,true);assert.equal(app.status.focused,true);assert.equal(app.form.resetCalled,true);assert.equal(app.attributes.has('aria-busy'),false);assert.equal(app.cleared(),true);
  });

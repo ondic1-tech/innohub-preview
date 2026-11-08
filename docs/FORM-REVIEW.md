@@ -2,15 +2,19 @@
 
 Stav 8. 11. 2026. Formulář podle potvrzení zadavatele zůstává v CZ i EN.
 
+**Aktualizace živého ověření:** jeden výslovně schválený technický pokus potvrdil
+neprovedenou aktivaci u poskytovatele. Viz [diagnóza](FORM-ACTIVATION-DIAGNOSIS.md).
+Aktivace a skutečné doručení zůstávají otevřené.
+
 ## Ověřeno v kódu a izolovaných testech
 
 - Obě stránky posílají na FormSubmit pro innohub@tc.cz; JavaScript používá AJAX
   endpoint stejného poskytovatele. Povinné jsou jméno, příjmení, e-mail a zpráva;
   telefon je nepovinný. Jméno/příjmení/e-mail/telefon mají limit 150 znaků,
   zpráva 5 000 znaků. Pole mají popisky a formulář přímý e-mailový kontakt.
-- 20 offline testů aplikace (10 pro každý jazyk) prošlo: přijetí úspěšné odpovědi,
+- 22 offline testů aplikace (11 pro každý jazyk) prošlo: přijetí úspěšné odpovědi,
   neplatný vstup, honeypot, dvojité odeslání, chyba HTTP, zamítnutí poskytovatelem,
-  požadavek aktivace, neplatné JSON, výpadek sítě a timeout.
+  požadavek aktivace včetně skutečného formátu odpovědi, neplatné JSON, výpadek sítě a timeout.
 - Chyby zachovají vstup, obnoví tlačítko a zruší stav aria-busy. Oprava přesune
   focus na stavovou zprávu také při chybě. Výsledek od služby se nevkládá jako HTML.
 - Při odeslání se neposílá query string aktuální stránky (ověřeno testem).

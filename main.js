@@ -118,6 +118,7 @@ if(inquiryForm){
   const button=inquiryForm.querySelector('button[type="submit"]');
   const en=document.documentElement.lang==='en';
   const failure=en?'Your message could not be sent. Please try again or email innohub@tc.cz.':'Zprávu se nepodařilo odeslat. Zkuste to znovu nebo napište na innohub@tc.cz.';
+  const inactive=en?'This contact form is not available yet. Please email innohub@tc.cz.':'Kontaktní formulář zatím není zprovozněný. Napište prosím na innohub@tc.cz.';
   inquiryForm.addEventListener('submit',async event=>{
     event.preventDefault();
     if(button.disabled||!inquiryForm.reportValidity())return;
@@ -135,8 +136,8 @@ if(inquiryForm){
     try{
       const response=await fetch('https://formsubmit.co/ajax/innohub@tc.cz',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data),signal:controller.signal});
       const result=await response.json();
-      if(!response.ok||(result.success!==true&&result.success!=='true'))throw new Error('Submission failed');
-      if(/activat|confirm.*email|check.*email/i.test(result.message||''))throw new Error('Activation needed');
+      if(/\b(?:needs?|requires?)\s+activation\b|\bactivate\s+(?:this|the|your)\s+form\b/i.test(result?.message||''))throw new Error('FORM_ACTIVATION_REQUIRED');
+      if(!response.ok||(result?.success!==true&&result?.success!=='true'))throw new Error('Submission failed');
       inquiryForm.querySelector('.form-fields').hidden=true;
       status.classList.add('success');
       status.textContent=en?'Thank you for your message. We will contact you.':'Děkujeme za Vaši zprávu, budeme Vás kontaktovat.';
@@ -144,7 +145,7 @@ if(inquiryForm){
       status.focus();
     }catch(error){
       status.classList.add('error');
-      status.textContent=failure;
+      status.textContent=error.message==='FORM_ACTIVATION_REQUIRED'?inactive:failure;
       status.focus();
     }finally{
       clearTimeout(timeout);
