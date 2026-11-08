@@ -149,7 +149,7 @@ picture.responsive-image{display:contents}
 /* Enlarge header marks and text by 20% without changing the header height.
    Noway's optical offset and cap-height ratio keep the visible lettering centred. */
 .brand-row{--header-wordmark:2.4rem;--header-offset:.528rem;--header-tc-width:190.8px;--header-language-size:1.05rem;position:relative;height:100px}
-.brand-row>.brand{margin-left:0;transform:translateY(var(--header-offset))}
+.brand-row>.brand{margin-left:0;transform:translateY(calc(var(--header-offset) - 2px))}
 .brand-row .wordmark{font-size:var(--header-wordmark)}
 .brand-caption{position:absolute;left:calc(40px + 8.859375rem + 22px);top:50%;transform:translateY(-50%);text-decoration:none}
 .brand-caption .brand-sub{display:block;transform:none;font-size:calc(var(--header-wordmark) * 1155 / 1434);line-height:1;text-transform:uppercase;font-weight:600}
