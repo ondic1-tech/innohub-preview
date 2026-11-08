@@ -1,7 +1,14 @@
 # Stav předprodukčních oprav — 8. 11. 2026
 
 Výchozí SHA: `df789cc0b0be72ac37a507a0ad532ad858fd64b8`.
-Pracovní větev: `prelaunch-audit-fixes`. Produkční vydání není schváleno.
+Pracovní větev: `prelaunch-audit-fixes`.
+**Aktualizace po schválení: produkce nasazena 8. 11. 2026 ve 21:28 CET.**
+Ondřej Šimek výslovně schválil ostré spuštění; formulář dříve výslovně odložil.
+Aktuální výsledek, záloha, ověření a otevřené následné úkoly jsou v
+[PRODUCTION-RELEASE.md](PRODUCTION-RELEASE.md).
+Následující checklist zachycuje stav přípravy před tímto schválením; formulace
+„nenasazeno“, „neschváleno“ či „zbývá“ níže jsou historické. Aktuální nasazení
+neznamená dokončení všech širších auditů v původním plánu.
 Tento záznam rozlišuje provedenou práci od zbývajících podmínek původního plánu.
 
 Další provedené kontroly a omezení: [druhý průchod](PRELAUNCH-SECOND-PASS.md).

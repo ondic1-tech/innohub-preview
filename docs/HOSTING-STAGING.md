@@ -1,5 +1,9 @@
 # Záloha živého webu a nasazení testovací kopie — 8. 11. 2026
 
+**Následná aktualizace:** po výslovném schválení zadavatele bylo provedeno ostré
+nasazení, nová záloha a ověření. Aktuální záznam včetně nového archivu je v
+[PRODUCTION-RELEASE.md](PRODUCTION-RELEASE.md). Níže je historický protokol stagingu.
+
 Zadavatel výslovně odložil řešení formuláře a požádal pokračovat v nasazování;
 následně upřednostnil zálohu aktuálně nasazené verze. Formulář není označen za funkční.
 

@@ -1,5 +1,15 @@
 # Zadání pro správce hostingu: DNS, HTTPS a připravenost nového INNOHUB
 
+**Aktualizace 8. 11. 2026, 21:32 CET:** nové vydání je po výslovném schválení
+Ondřejem Šimkem již na produkci. DNS zachováno, přesměrování ověřeno i pro cestu
+a query, HTML má bezpečnostní hlavičky a krátké HSTS; CSP je Report-Only.
+Nyní prosíme vyprázdnit starou serverovou/proxy cache domény: u 10 adres statických
+souborů se vracejí staré hlavičky, přestože obsah souhlasí. Nový query parametr
+vrací správné hlavičky. Ověřit běžné adresy po vyprázdnění a sjednotit hlavičky
+i pro cache odpovědi. Podrobnosti a další otevřené úkoly:
+[PRODUCTION-RELEASE.md](PRODUCTION-RELEASE.md).
+Původní zadání níže zůstává referencí; jeho popis dosavadního webu je historický.
+
 Ostré nasazení schvaluje **Ondřej Šimek**. Správcem DNS a HTTPS je správce hostingu.
 Toto je technické zadání k přípravě, nikoliv pokyn k okamžitému přepsání živého webu.
 Kanonická adresa nového webu: **https://innohub.cz/**, bez www.
