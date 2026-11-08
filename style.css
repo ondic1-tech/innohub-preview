@@ -137,6 +137,9 @@ picture.responsive-image{display:contents}
 /* Menu palette only: retain the published layout and text positions. */
 .masthead .navigation{background-color:#008cd2;border-color:#008cd2}
 .masthead .navigation .nav-list a{color:#eaf6fc;font-size:1.2rem;font-weight:700}
+/* Noway's visible letters sit above its line-box centre. Offset the text only;
+   keep link heights, horizontal positions and the active underline unchanged. */
+.masthead .navigation .nav-list a{padding-top:calc(3px + .44em)}
 .masthead .navigation .nav-list a:hover,.masthead .navigation .nav-list a:focus-visible,.masthead .navigation .nav-list a.active{color:#fff;border-color:#fff}
 .masthead .navigation .nav-list a.active{background-color:transparent}
 .masthead .navigation .menu-toggle{color:#fff;background-color:#0a416e;border-color:#0a416e}
