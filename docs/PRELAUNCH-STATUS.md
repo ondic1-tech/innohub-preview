@@ -7,6 +7,7 @@ Tento záznam rozlišuje provedenou práci od zbývajících podmínek původní
 Další provedené kontroly a omezení: [druhý průchod](PRELAUNCH-SECOND-PASS.md).
 Konkrétní úkoly k předání: [správce hostingu](HOSTING-TASKS.md).
 Testy a zbývající ověření formuláře: [formulář](FORM-REVIEW.md).
+Dokončené výchozí měření 20 profilů a navazující opravy: [PageSpeed](PAGESPEED-BASELINE.md).
 
 ## Rozhodnutí a první etapa
 
@@ -69,8 +70,17 @@ Protokoly: `prelaunch-static-validation.json`, `prelaunch-http-validation.json`.
 - [ ] 2.1–2.4 Úplné HTTPS/TLS přesměrování nového kandidáta, hlavičky, schválení závislostí
   a bezpečnostní audit. Předběžná kontrola main.js/news.js nenašla použití
   innerHTML/eval pro URL nebo uživatelský vstup; nejde o úplný dynamický bezpečnostní audit.
-- [ ] 3.1–3.5 Lighthouse, CWV, další prohlížeče a úplný audit WCAG zůstávají otevřené.
-  Nejsou k dispozici reálné údaje INP/LCP/CLS nového webu.
+- [ ] 3.1 Výchozí Lighthouse audit veřejného main dokončen pro 5 šablon CZ/EN,
+  každou na mobilu i PC (20 výsledků). Výsledky, konfigurace a reportové URL uloženy.
+  Všechny mají výkon 100; opravený kandidát čeká na opakování po nasazení na staging.
+- [ ] 3.2 Laboratorní LCP výchozího náhledu 0,2–1,5 s, CLS 0, TBT 0–10 ms.
+  PSI nevrací reálná data, INP a 75. percentil CWV nového webu nejsou ověřeny.
+- [ ] 3.3 Doba cache a obrázková doporučení jsou evidována v reportu a zadání
+  hostingu. Definitivní ověření přenosů a cache cílového serveru zbývá.
+- [ ] 3.4–3.5 Opravené kontrasty a pořadí nadpisů prověřeny v Chromium ve 36
+  kombinacích stránky/šířky, 354 textových kontrol bez chyby. Bez vodorovného
+  přetečení na kontrolovaných šířkách 320–1275 CSS px. To nenahrazuje Firefox,
+  WebKit, skutečný zoom, čtečku obrazovky ani úplný audit WCAG.
 - [x] 4.1 Oddělený produkční krok připraven a otestován; náhled i main mají dále noindex.
 - [ ] 4.2–4.3 Místní sitemap/canonical/hreflang a strukturovaná data ověřeny;
   indexovatelnost skutečné produkce, úplná kontrola metadat a sdílení zbývají.
