@@ -1,0 +1,25 @@
+{
+  "html": 67,
+  "externalEmbeddedResources": [],
+  "formActions": [
+    {
+      "file": "en/contact/index.html",
+      "url": "https://formsubmit.co/innohub@tc.cz"
+    },
+    {
+      "file": "kontakt/index.html",
+      "url": "https://formsubmit.co/innohub@tc.cz"
+    }
+  ],
+  "inlineExecutableScripts": [
+    {
+      "file": "404.html",
+      "code": "if(location.hostname.endsWith(\".github.io\"))document.querySelector(\"base[data-error-base]\").href=\"/innohub-preview/\";"
+    }
+  ],
+  "inlineEventHandlers": [],
+  "javascriptURLs": [],
+  "domSinks": [],
+  "missingCSSResources": [],
+  "insecureResources": []
+}

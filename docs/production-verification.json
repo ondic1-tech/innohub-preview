@@ -1,0 +1,143 @@
+{
+  "summary": {
+    "checkedAt": "2026-11-08T20:32:26.523Z",
+    "sourceCommit": "8d5ad3a05ca5ece4b5083b753d5be7b806753b38",
+    "approvedWebCommit": "779726152e9fbad9340710eb980d46532c570d85",
+    "publicFilesChecked": 143,
+    "hashFailures": 0,
+    "indexablePages": 34,
+    "noindexAliasesAnd404": 33,
+    "sitemapUrls": 34,
+    "sitemapMissing": [],
+    "redirects": [
+      {
+        "from": "http://innohub.cz",
+        "status": 301,
+        "location": "https://innohub.cz/en/services/?release=production",
+        "pass": true
+      },
+      {
+        "from": "http://www.innohub.cz",
+        "status": 301,
+        "location": "https://innohub.cz/en/services/?release=production",
+        "pass": true
+      },
+      {
+        "from": "https://www.innohub.cz",
+        "status": 301,
+        "location": "https://innohub.cz/en/services/?release=production",
+        "pass": true
+      }
+    ],
+    "notFound": {
+      "status": 404,
+      "noindex": true,
+      "baseCorrect": true
+    },
+    "staging": {
+      "status": 200,
+      "headerNoindex": true,
+      "metaNoindex": true
+    },
+    "cachedAssetHeaderWarnings": [
+      "assets/noway-bold.woff2",
+      "assets/noway-regular.woff2",
+      "assets/noway-medium.woff2",
+      "assets/optimized/platforms-cih-logo-170.webp",
+      "assets/optimized/platforms-commercialization-reactor-wordmark-410.webp",
+      "assets/platforms/elignite-logo.svg",
+      "assets/platforms/esa-logo.svg",
+      "assets/platforms/research-infrastructures-cs.svg",
+      "assets/strast-favicon.png",
+      "assets/tc-logo.svg"
+    ],
+    "assetFreshChecks": [
+      {
+        "path": "assets/noway-bold.woff2",
+        "status": 200,
+        "hashMatches": true,
+        "freshHeadersPresent": true
+      },
+      {
+        "path": "assets/noway-regular.woff2",
+        "status": 200,
+        "hashMatches": true,
+        "freshHeadersPresent": true
+      },
+      {
+        "path": "assets/noway-medium.woff2",
+        "status": 200,
+        "hashMatches": true,
+        "freshHeadersPresent": true
+      },
+      {
+        "path": "assets/optimized/platforms-cih-logo-170.webp",
+        "status": 200,
+        "hashMatches": true,
+        "freshHeadersPresent": true
+      },
+      {
+        "path": "assets/optimized/platforms-commercialization-reactor-wordmark-410.webp",
+        "status": 200,
+        "hashMatches": true,
+        "freshHeadersPresent": true
+      },
+      {
+        "path": "assets/platforms/elignite-logo.svg",
+        "status": 200,
+        "hashMatches": true,
+        "freshHeadersPresent": true
+      },
+      {
+        "path": "assets/platforms/esa-logo.svg",
+        "status": 200,
+        "hashMatches": true,
+        "freshHeadersPresent": true
+      },
+      {
+        "path": "assets/platforms/research-infrastructures-cs.svg",
+        "status": 200,
+        "hashMatches": true,
+        "freshHeadersPresent": true
+      },
+      {
+        "path": "assets/strast-favicon.png",
+        "status": 200,
+        "hashMatches": true,
+        "freshHeadersPresent": true
+      },
+      {
+        "path": "assets/tc-logo.svg",
+        "status": 200,
+        "hashMatches": true,
+        "freshHeadersPresent": true
+      }
+    ],
+    "failures": [],
+    "passedWithAssetCacheFollowup": true
+  },
+  "backup": {
+    "verifiedFiles": 139,
+    "passed": true,
+    "archiveSHA256": "9EC2AAFBE8560F4EE18F14A10751B73B3DC9136B4D0850A814C17BE38CB4C565"
+  },
+  "browser": {
+    "engine": "Chrome",
+    "checkedAt": "2026-11-08T20:34:00Z",
+    "scenarios": [
+      "CZ home to validation service",
+      "EN switch preserves selected service",
+      "EN case studies",
+      "EN news rendered",
+      "INNOHUB logo returns to EN home",
+      "switch to CZ home; reload replaces prior browser cache"
+    ],
+    "formSubmitted": false
+  },
+  "limitations": [
+    "FormSubmit activation deferred by user",
+    "10 cached static asset responses lack new headers; new query variants verified",
+    "CSP Report-Only",
+    "No fresh production Lighthouse or full accessibility audit"
+  ]
+}

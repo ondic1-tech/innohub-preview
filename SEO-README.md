@@ -47,12 +47,15 @@ Nebyly měněny DNS, nastavení vlastní domény v GitHub Pages ani Search Conso
 4. **Pouze v produkční kopii pro innohub.cz** spustit:
 
    ```text
-   python tools/prepare_site.py --enable-indexing --confirm-live-domain innohub.cz
-   python tools/check_site.py --indexing on
+   node tools/build_release.cjs --mode production --confirm-live-domain innohub.cz --output-dir ../innohub-production-NEW
    ```
 
-   Tyto příkazy samy nic nenahrávají. Výsledek je nutné nasadit do produkce.
-   Samotné `--enable-indexing` bez potvrzení domény skončí chybou.
+   Tento příkaz použít až po schválení vydání podle předprodukčního plánu.
+   Sám nic nenahrává. Výsledek je nutné nasadit do produkce. Výstup musí být
+   nový adresář mimo zdrojový web. Skript nekonvertuje obrázky a nepřepisuje
+   schválené texty ani metadata; upraví robots meta, robots.txt a revize CSS/JS.
+   Zdrojová kopie i veřejný náhled zůstávají beze změny. Režim production
+   bez potvrzení domény skončí chybou. Kontrolní součty jsou v sousedním manifestu.
    404 a přesměrování zůstávají noindex i v produkci.
 5. V živé odpovědi z innohub.cz zkontrolovat odstranění noindex z obsahových stránek
    a případnou nepřítomnost blokujícího `X-Robots-Tag` HTTP headeru od hostingu.
@@ -60,7 +63,7 @@ Nebyly měněny DNS, nastavení vlastní domény v GitHub Pages ani Search Conso
    `https://innohub.cz/sitemap.xml` a použít kontrolu URL. Následně sledovat indexaci,
    chybné stránky a Core Web Vitals. Sitemap nezaručuje okamžité zaindexování.
 
-**Náhled v Sites má zůstat noindex.** Po aktivaci na doméně nepřepsat produkci
+**Náhled na GitHub Pages má zůstat noindex.** Po aktivaci na doméně nepřepsat produkci
 náhledovým exportem bez opětovného provedení produkčního kroku výše.
 
 ## Běžná údržba

@@ -1,0 +1,181 @@
+{
+  "scope": "Current legacy hosting, not the new release candidate",
+  "checkedAt": "2026-11-08T18:59:57.536Z",
+  "dns": [
+    {
+      "host": "innohub.cz",
+      "A": [
+        "37.9.175.165"
+      ],
+      "AAAA": [
+        "2a00:4b40:aaaa:2005::6"
+      ],
+      "CAA": {
+        "error": "ENODATA"
+      },
+      "MX": [
+        {
+          "exchange": "mx10.active24.cz",
+          "priority": 10,
+          "type": "MX"
+        },
+        {
+          "exchange": "mx20.active24.cz",
+          "priority": 100,
+          "type": "MX"
+        }
+      ],
+      "NS": [
+        "ns1.websupport.cz",
+        "ns2.websupport.cz",
+        "ns3.websupport.eu"
+      ]
+    },
+    {
+      "host": "www.innohub.cz",
+      "A": [
+        "37.9.175.165"
+      ],
+      "AAAA": [
+        "2a00:4b40:aaaa:2005::6"
+      ],
+      "CAA": {
+        "error": "ENODATA"
+      },
+      "MX": {
+        "error": "ENODATA"
+      },
+      "NS": {
+        "error": "ENODATA"
+      }
+    }
+  ],
+  "http": [
+    [
+      {
+        "url": "http://innohub.cz/",
+        "status": 301,
+        "headers": {
+          "location": "https://innohub.cz/",
+          "strict-transport-security": null,
+          "content-security-policy": null,
+          "x-content-type-options": null,
+          "referrer-policy": null,
+          "permissions-policy": null,
+          "x-frame-options": null,
+          "server": "openresty"
+        }
+      },
+      {
+        "url": "https://innohub.cz/",
+        "status": 200,
+        "headers": {
+          "location": null,
+          "strict-transport-security": null,
+          "content-security-policy": null,
+          "x-content-type-options": null,
+          "referrer-policy": null,
+          "permissions-policy": null,
+          "x-frame-options": null,
+          "server": "openresty"
+        }
+      }
+    ],
+    [
+      {
+        "url": "http://www.innohub.cz/",
+        "status": 301,
+        "headers": {
+          "location": "https://innohub.cz/",
+          "strict-transport-security": null,
+          "content-security-policy": null,
+          "x-content-type-options": null,
+          "referrer-policy": null,
+          "permissions-policy": null,
+          "x-frame-options": null,
+          "server": "openresty"
+        }
+      },
+      {
+        "url": "https://innohub.cz/",
+        "status": 200,
+        "headers": {
+          "location": null,
+          "strict-transport-security": null,
+          "content-security-policy": null,
+          "x-content-type-options": null,
+          "referrer-policy": null,
+          "permissions-policy": null,
+          "x-frame-options": null,
+          "server": "openresty"
+        }
+      }
+    ],
+    [
+      {
+        "url": "https://innohub.cz/",
+        "status": 200,
+        "headers": {
+          "location": null,
+          "strict-transport-security": null,
+          "content-security-policy": null,
+          "x-content-type-options": null,
+          "referrer-policy": null,
+          "permissions-policy": null,
+          "x-frame-options": null,
+          "server": "openresty"
+        }
+      }
+    ],
+    [
+      {
+        "url": "https://www.innohub.cz/",
+        "status": 301,
+        "headers": {
+          "location": "https://innohub.cz/",
+          "strict-transport-security": null,
+          "content-security-policy": null,
+          "x-content-type-options": null,
+          "referrer-policy": null,
+          "permissions-policy": null,
+          "x-frame-options": null,
+          "server": "openresty"
+        }
+      },
+      {
+        "url": "https://innohub.cz/",
+        "status": 200,
+        "headers": {
+          "location": null,
+          "strict-transport-security": null,
+          "content-security-policy": null,
+          "x-content-type-options": null,
+          "referrer-policy": null,
+          "permissions-policy": null,
+          "x-frame-options": null,
+          "server": "openresty"
+        }
+      }
+    ]
+  ],
+  "tls": [
+    {
+      "host": "innohub.cz",
+      "authorized": true,
+      "protocol": "TLSv1.3",
+      "subjectAltName": "DNS:*.innohub.cz, DNS:innohub.cz",
+      "validFrom": "Nov  2 07:55:57 2026 GMT",
+      "validTo": "Jan 31 07:55:56 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.innohub.cz",
+      "authorized": true,
+      "protocol": "TLSv1.3",
+      "subjectAltName": "DNS:*.innohub.cz, DNS:innohub.cz",
+      "validFrom": "Nov  2 07:55:57 2026 GMT",
+      "validTo": "Jan 31 07:55:56 2027 GMT",
+      "issuer": "Let's Encrypt"
+    }
+  ]
+}

@@ -57,7 +57,7 @@ def meta(s,key,value,prop=False):
     s=re.sub(r'<meta\b[^>]*'+kind+'="'+re.escape(key)+r'"[^>]*>','',s)
     return s.replace('</head>',tag('meta',{kind:key,'content':value})+'</head>')
 
-def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()[:12]
+def digest(p):return hashlib.sha256(p.read_bytes().replace(b'\r\n',b'\n')).hexdigest()[:12]
 
 external={
  'https://cdn.muni.cz/media/3639417/cih_lg_col_rgb.png?mode=crop&center=0.5,0.5&rnd=133555746800000000&width=170':DIST/'assets/platforms/cih-logo.png',

@@ -1,0 +1,600 @@
+{
+  "target": "Existing GitHub Pages preview, not the new branch or production candidate",
+  "rows": [
+    {
+      "page": "",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/case-studies/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/case-studies/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/case-studies/bbt-twins/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/case-studies/bbt-twins/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/case-studies/psp/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/case-studies/psp/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/case-studies/toseda/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/case-studies/toseda/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/contact/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/contact/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/news/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/news/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/platforms/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/platforms/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/programmes/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/programmes/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/programmes/cybersecurity/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/programmes/cybersecurity/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/programmes/elignite/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/programmes/elignite/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/programmes/esa/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/programmes/esa/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/programmes/ilo/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/programmes/ilo/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/programmes/reactor/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/programmes/reactor/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/programmes/runway/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/programmes/runway/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/services/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/services/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "en/team/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/en/team/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "kontakt/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/kontakt/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "novinky/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/novinky/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "platformy/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/platformy/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "prelaunch-404-probe-20261108/no-page/",
+      "status": 404,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/prelaunch-404-probe-20261108/no-page/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": null,
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "programy/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/programy/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "programy/cyber/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/programy/cyber/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "programy/elignite/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/programy/elignite/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "programy/esa/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/programy/esa/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "programy/ilo/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/programy/ilo/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "programy/reactor/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/programy/reactor/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "programy/runway/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/programy/runway/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "reference/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/reference/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "reference/bbt-twins/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/reference/bbt-twins/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "reference/psp/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/reference/psp/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "reference/toseda/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/reference/toseda/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "sluzby/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/sluzby/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    },
+    {
+      "page": "tym/",
+      "status": 200,
+      "finalURL": "https://ondic1-tech.github.io/innohub-preview/tym/",
+      "noindex": true,
+      "headers": {
+        "content-encoding": "gzip",
+        "cache-control": "max-age=600",
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-frame-options": null,
+        "strict-transport-security": "max-age=31556952",
+        "x-robots-tag": null
+      }
+    }
+  ]
+}

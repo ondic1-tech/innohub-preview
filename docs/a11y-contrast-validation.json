@@ -1,0 +1,368 @@
+{
+  "scope": "Targeted computed-style contrast and heading checks in local Chromium candidate; not a complete WCAG audit",
+  "cases": 36,
+  "textChecks": 354,
+  "failures": [],
+  "checks": [
+    {
+      "path": "",
+      "width": 1275,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "sluzby/",
+      "width": 1275,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "kontakt/",
+      "width": 1275,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 7,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "reference/",
+      "width": 1275,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "reference/psp/",
+      "width": 1275,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 8,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/",
+      "width": 1275,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/services/",
+      "width": 1275,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/contact/",
+      "width": 1275,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 7,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/case-studies/",
+      "width": 1275,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/case-studies/psp/",
+      "width": 1275,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 8,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "",
+      "width": 390,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "sluzby/",
+      "width": 390,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "kontakt/",
+      "width": 390,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 7,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "reference/",
+      "width": 390,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "reference/psp/",
+      "width": 390,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 8,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/",
+      "width": 390,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/services/",
+      "width": 390,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/contact/",
+      "width": 390,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 7,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/case-studies/",
+      "width": 390,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/case-studies/psp/",
+      "width": 390,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 8,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "",
+      "width": 320,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "sluzby/",
+      "width": 320,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "kontakt/",
+      "width": 320,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 7,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "reference/",
+      "width": 320,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "reference/psp/",
+      "width": 320,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 8,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/",
+      "width": 320,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/services/",
+      "width": 320,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/contact/",
+      "width": 320,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 7,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/case-studies/",
+      "width": 320,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 10,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/case-studies/psp/",
+      "width": 320,
+      "overflow": false,
+      "headerGap": 54.666656494140625,
+      "textChecks": 8,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "",
+      "width": 801,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/",
+      "width": 801,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "",
+      "width": 950,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/",
+      "width": 950,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "",
+      "width": 1024,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    },
+    {
+      "path": "en/",
+      "width": 1024,
+      "overflow": false,
+      "headerGap": 16.666656494140625,
+      "textChecks": 12,
+      "minimumContrast": 3.3591887091372756,
+      "contrastFailures": [],
+      "headingIssues": []
+    }
+  ]
+}

@@ -1,0 +1,850 @@
+{
+  "scope": "Published main df789cc0b0be72ac37a507a0ad532ad858fd64b8 before working-branch fixes; values read from PageSpeed rendered reports, not raw LHR export",
+  "records": [
+    {
+      "path": "",
+      "report": "https://pagespeed.web.dev/analysis/https-ondic1-tech-github-io-innohub-preview/cd23iiri52?form_factor=mobile",
+      "profiles": [
+        {
+          "device": "mobile",
+          "scores": {
+            "performance": 100,
+            "accessibility": 96,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "10 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "2,4 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:10 SEČEmulované zařízení Moto G Power with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 638 Omezení procesoru: 1,2x slowdown (Simulated) Emulace obrazovky: 412x823, DPR 1.75 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyPomalé omezení 4GOmezení sítě: 150 ms TCP RTT, 1 638,4 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "render-blocking-insight",
+            "forced-reflow-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        },
+        {
+          "device": "desktop",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,3 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,3 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,4 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:10 SEČEmulovaná plocha with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 824 Omezení procesoru: 1x slowdown (Simulated) Emulace obrazovky: 1350x940, DPR 1 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyVlastní omezeníOmezení sítě: 40 ms TCP RTT, 10 240 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "sluzby/",
+      "report": "https://pagespeed.web.dev/analysis/https-ondic1-tech-github-io-innohub-preview-sluzby/ik9a8vjdks?form_factor=mobile",
+      "profiles": [
+        {
+          "device": "mobile",
+          "scores": {
+            "performance": 100,
+            "accessibility": 97,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,9 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:11 SEČEmulované zařízení Moto G Power with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 745 Omezení procesoru: 1,2x slowdown (Simulated) Emulace obrazovky: 412x823, DPR 1.75 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyPomalé omezení 4GOmezení sítě: 150 ms TCP RTT, 1 638,4 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "render-blocking-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        },
+        {
+          "device": "desktop",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,2 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,2 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,3 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:11 SEČEmulovaná plocha with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 1031 Omezení procesoru: 1x slowdown (Simulated) Emulace obrazovky: 1350x940, DPR 1 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyVlastní omezeníOmezení sítě: 40 ms TCP RTT, 10 240 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "heading-order",
+            "is-crawlable"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "kontakt/",
+      "report": "https://pagespeed.web.dev/analysis/https-ondic1-tech-github-io-innohub-preview-kontakt/tzxvlv77dm?form_factor=mobile",
+      "profiles": [
+        {
+          "device": "mobile",
+          "scores": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "1,4 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,9 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:11 SEČEmulované zařízení Moto G Power with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 753 Omezení procesoru: 1,2x slowdown (Simulated) Emulace obrazovky: 412x823, DPR 1.75 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyPomalé omezení 4GOmezení sítě: 150 ms TCP RTT, 1 638,4 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "cache-insight",
+            "render-blocking-insight",
+            "network-dependency-tree-insight",
+            "is-crawlable"
+          ]
+        },
+        {
+          "device": "desktop",
+          "scores": {
+            "performance": 100,
+            "accessibility": 97,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,3 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,3 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,3 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:11 SEČEmulovaná plocha with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 888 Omezení procesoru: 1x slowdown (Simulated) Emulace obrazovky: 1350x940, DPR 1 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyVlastní omezeníOmezení sítě: 40 ms TCP RTT, 10 240 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "reference/",
+      "report": "https://pagespeed.web.dev/analysis/https-ondic1-tech-github-io-innohub-preview-reference/trgdju6hcv?form_factor=mobile",
+      "profiles": [
+        {
+          "device": "mobile",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "1,5 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "2,5 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulované zařízení Moto G Power with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 1249 Omezení procesoru: 1,2x slowdown (Simulated) Emulace obrazovky: 412x823, DPR 1.75 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyPomalé omezení 4GOmezení sítě: 150 ms TCP RTT, 1 638,4 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "cache-insight",
+            "image-delivery-insight",
+            "render-blocking-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        },
+        {
+          "device": "desktop",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,2 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,4 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,4 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulovaná plocha with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 868 Omezení procesoru: 1x slowdown (Simulated) Emulace obrazovky: 1350x940, DPR 1 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyVlastní omezeníOmezení sítě: 40 ms TCP RTT, 10 240 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "cache-insight",
+            "image-delivery-insight",
+            "render-blocking-insight",
+            "lcp-discovery-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "reference/psp/",
+      "report": "https://pagespeed.web.dev/analysis/https-ondic1-tech-github-io-innohub-preview-reference-psp/rlf10p9bdc?form_factor=mobile",
+      "profiles": [
+        {
+          "device": "mobile",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,9 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulované zařízení Moto G Power with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 840 Omezení procesoru: 1,2x slowdown (Simulated) Emulace obrazovky: 412x823, DPR 1.75 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyPomalé omezení 4GOmezení sítě: 150 ms TCP RTT, 1 638,4 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "render-blocking-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        },
+        {
+          "device": "desktop",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,3 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,3 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,3 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulovaná plocha with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 1076 Omezení procesoru: 1x slowdown (Simulated) Emulace obrazovky: 1350x940, DPR 1 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyVlastní omezeníOmezení sítě: 40 ms TCP RTT, 10 240 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "en/",
+      "report": "https://pagespeed.web.dev/analysis/https-ondic1-tech-github-io-innohub-preview-en/km91mq8hhq?form_factor=mobile",
+      "profiles": [
+        {
+          "device": "mobile",
+          "scores": {
+            "performance": 100,
+            "accessibility": 96,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,9 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulované zařízení Moto G Power with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 1055 Omezení procesoru: 1,2x slowdown (Simulated) Emulace obrazovky: 412x823, DPR 1.75 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyPomalé omezení 4GOmezení sítě: 150 ms TCP RTT, 1 638,4 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "render-blocking-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        },
+        {
+          "device": "desktop",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,3 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,3 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,3 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulovaná plocha with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 712 Omezení procesoru: 1x slowdown (Simulated) Emulace obrazovky: 1350x940, DPR 1 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyVlastní omezeníOmezení sítě: 40 ms TCP RTT, 10 240 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "en/services/",
+      "report": "https://pagespeed.web.dev/analysis/https-ondic1-tech-github-io-innohub-preview-en-services/0lsyho8jbg?form_factor=mobile",
+      "profiles": [
+        {
+          "device": "mobile",
+          "scores": {
+            "performance": 100,
+            "accessibility": 97,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,9 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulované zařízení Moto G Power with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 738 Omezení procesoru: 1,2x slowdown (Simulated) Emulace obrazovky: 412x823, DPR 1.75 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyPomalé omezení 4GOmezení sítě: 150 ms TCP RTT, 1 638,4 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "render-blocking-insight",
+            "forced-reflow-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        },
+        {
+          "device": "desktop",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,2 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,2 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,2 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulovaná plocha with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 1282 Omezení procesoru: 1x slowdown (Simulated) Emulace obrazovky: 1350x940, DPR 1 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyVlastní omezeníOmezení sítě: 40 ms TCP RTT, 10 240 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "heading-order",
+            "is-crawlable"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "en/contact/",
+      "report": "https://pagespeed.web.dev/analysis/https-ondic1-tech-github-io-innohub-preview-en-contact/7n0yqempl9?form_factor=mobile",
+      "profiles": [
+        {
+          "device": "mobile",
+          "scores": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "1,0 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "1,0 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "1,0 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulované zařízení Moto G Power with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 541 Omezení procesoru: 1,2x slowdown (Simulated) Emulace obrazovky: 412x823, DPR 1.75 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyPomalé omezení 4GOmezení sítě: 150 ms TCP RTT, 1 638,4 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "render-blocking-insight",
+            "network-dependency-tree-insight",
+            "is-crawlable"
+          ]
+        },
+        {
+          "device": "desktop",
+          "scores": {
+            "performance": 100,
+            "accessibility": 97,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,2 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,2 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,2 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulovaná plocha with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 601 Omezení procesoru: 1x slowdown (Simulated) Emulace obrazovky: 1350x940, DPR 1 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyVlastní omezeníOmezení sítě: 40 ms TCP RTT, 10 240 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "en/case-studies/",
+      "report": "https://pagespeed.web.dev/analysis/https-ondic1-tech-github-io-innohub-preview-en-case-studies/xt4b2c2z3p?form_factor=mobile",
+      "profiles": [
+        {
+          "device": "mobile",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "1,5 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "2,5 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulované zařízení Moto G Power with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 428 Omezení procesoru: 1,2x slowdown (Simulated) Emulace obrazovky: 412x823, DPR 1.75 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyPomalé omezení 4GOmezení sítě: 150 ms TCP RTT, 1 638,4 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "cache-insight",
+            "render-blocking-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        },
+        {
+          "device": "desktop",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,2 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,4 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,2 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulovaná plocha with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 723 Omezení procesoru: 1x slowdown (Simulated) Emulace obrazovky: 1350x940, DPR 1 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyVlastní omezeníOmezení sítě: 40 ms TCP RTT, 10 240 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "cache-insight",
+            "image-delivery-insight",
+            "render-blocking-insight",
+            "lcp-discovery-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "en/case-studies/psp/",
+      "report": "https://pagespeed.web.dev/analysis/https-ondic1-tech-github-io-innohub-preview-en-case-studies-psp/iu7aj3p5tu?form_factor=mobile",
+      "profiles": [
+        {
+          "device": "mobile",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,9 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,9 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulované zařízení Moto G Power with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 550 Omezení procesoru: 1,2x slowdown (Simulated) Emulace obrazovky: 412x823, DPR 1.75 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyPomalé omezení 4GOmezení sítě: 150 ms TCP RTT, 1 638,4 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "render-blocking-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        },
+        {
+          "device": "desktop",
+          "scores": {
+            "performance": 100,
+            "accessibility": 95,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "metrics": [
+            {
+              "name": "First Contentful Paint",
+              "value": "0,2 s"
+            },
+            {
+              "name": "Largest Contentful Paint",
+              "value": "0,3 s"
+            },
+            {
+              "name": "Total Blocking Time",
+              "value": "0 ms"
+            },
+            {
+              "name": "Cumulative Layout Shift",
+              "value": "0"
+            },
+            {
+              "name": "Speed Index",
+              "value": "0,2 s"
+            }
+          ],
+          "environment": "Captured at 8. 11. 2026 20:12 SEČEmulovaná plocha with Lighthouse 13.6.0Bez omezení výkonu procesoru/paměti: 669 Omezení procesoru: 1x slowdown (Simulated) Emulace obrazovky: 1350x940, DPR 1 Verze knihovny Axe: 4.14.0 ARD version: 0.91 (f073b1e)Návštěva jedné stránkyTato data pocházejí z návštěvy jedné stránky – v protikladu k datům z terénu, která sumarizují mnoho relací.První načtení stránkyVlastní omezeníOmezení sítě: 40 ms TCP RTT, 10 240 kb/s throughput (Simulated) Umístění prohlížeče: EvropaUsing HeadlessChromium 157.0.8103.38 with lrUser agent (síť): \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\"",
+          "fieldDataAvailable": false,
+          "failedAuditIDs": [
+            "cache-insight",
+            "network-dependency-tree-insight",
+            "color-contrast",
+            "is-crawlable"
+          ]
+        }
+      ]
+    }
+  ]
+}
